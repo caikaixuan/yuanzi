@@ -423,11 +423,6 @@
               <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
               <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
-              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
-              <item name=".idea" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -716,7 +711,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="327455000" />
+    <option name="totallyTimeSpent" value="328021000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -1145,12 +1140,12 @@
         <state relative-caret-position="-3453">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#94864#94869#0" expanded="false" />
-            <element signature="e#94869#94874#0" expanded="false" />
-            <element signature="e#94912#94917#0" expanded="false" />
-            <element signature="e#94917#94922#0" expanded="false" />
-            <element signature="e#96224#96229#0" expanded="false" />
-            <element signature="e#96229#96234#0" expanded="false" />
+            <element signature="e#89806#89811#0" expanded="false" />
+            <element signature="e#89811#89816#0" expanded="false" />
+            <element signature="e#89854#89859#0" expanded="false" />
+            <element signature="e#89859#89864#0" expanded="false" />
+            <element signature="e#91166#91171#0" expanded="false" />
+            <element signature="e#91171#91176#0" expanded="false" />
           </folding>
         </state>
       </provider>

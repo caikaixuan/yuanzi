@@ -15,3 +15,13 @@
 /earn-common-service/earn-common-service-web/target/
 /earn-common-utils/target/
 /xpay/target/
+/.idea/
+/earn-authorization/.idea/
+/earn-base-object/.idea/
+/earn-business-common/.idea/
+/earn-business-management/.idea/
+/earn-common-service/.idea/
+/earn-common-utils/.idea/
+/earn-pom/.idea/
+/earnhelper/.idea/
+/xpay/.idea/
