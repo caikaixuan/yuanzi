@@ -1,0 +1,47 @@
+2019-01-21 10:15:55,484:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-21 10:15:55,536:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - ==> Parameters: 测试返回结果中argument字段是否是json类型(String), 第三个算法(String), third algorithm(String), 吊炸天(String), [{"argument_name":"x","argument_description":"横向坐标","argument_type":"Long"},{"argument_name":"y","argument_description":"纵向坐标","argument_type":"Long"}](String)
+2019-01-21 10:15:55,552:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-21 10:16:15,529:DEBUG qtp185674515-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE is_del = 0 and 1 = 1 
+2019-01-21 10:16:15,532:DEBUG qtp185674515-28 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:16:15,552:DEBUG qtp185674515-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:16:15,559:DEBUG qtp185674515-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE is_del = 0 and 1 = 1 limit 10 
+2019-01-21 10:16:15,560:DEBUG qtp185674515-28 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:16:15,580:DEBUG qtp185674515-28 (BaseJdbcLogger.java:159) - <==      Total: 2
+2019-01-21 10:21:10,946:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into experiment_algorithm(name,experiment_id,algorithm_id,algorithm_name_cn,algorithm_name_en,remark,arguments) values (?,?,?,?,?,?,?) 
+2019-01-21 10:21:11,029:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 第四个对(String), 12(Long), 13(Long), 第四个对(String), forth(String), 随便描述(String), [{"a":1,"b":2,"c":3}](String)
+2019-01-21 10:21:11,050:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-21 10:21:29,051:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn, algorithm_name_en, remark, arguments, create_time, create_by, update_time, update_by, ver, is_del from experiment_algorithm where id = ? and 1 = 1 
+2019-01-21 10:21:29,052:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 17(Long)
+2019-01-21 10:21:29,077:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:21:53,373:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_algorithm WHERE is_del = 0 and 1 = 1 
+2019-01-21 10:21:53,374:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:21:53,382:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:21:53,387:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn, algorithm_name_en, remark, arguments, create_time, create_by, update_time, update_by, ver, is_del from experiment_algorithm WHERE is_del = 0 and 1 = 1 limit 10 
+2019-01-21 10:21:53,388:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:22:18,179:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_algorithm WHERE is_del = 0 and 1 = 1 
+2019-01-21 10:22:18,179:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:22:18,186:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:22:18,189:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn, algorithm_name_en, remark, arguments, create_time, create_by, update_time, update_by, ver, is_del from experiment_algorithm WHERE is_del = 0 and 1 = 1 limit 10 
+2019-01-21 10:22:18,189:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:22:18,197:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:22:59,547:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into experiment_algorithm(name,experiment_id,algorithm_id,algorithm_name_cn,algorithm_name_en,remark,arguments) values (?,?,?,?,?,?,?) 
+2019-01-21 10:22:59,548:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==> Parameters: 第五个对(String), 12(Long), 13(Long), 第四个对(String), forth(String), 随便描述(String), [{"a":1,"b":2,"c":3}](String)
+2019-01-21 10:22:59,557:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-21 10:23:04,574:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_algorithm WHERE is_del = 0 and 1 = 1 
+2019-01-21 10:23:04,574:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:23:04,580:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:23:04,582:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn, algorithm_name_en, remark, arguments, create_time, create_by, update_time, update_by, ver, is_del from experiment_algorithm WHERE is_del = 0 and 1 = 1 limit 10 
+2019-01-21 10:23:04,583:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:23:04,591:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 2
+2019-01-21 10:24:04,206:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn, algorithm_name_en, remark, arguments, create_time, create_by, update_time, update_by, ver, is_del from experiment_algorithm where id = ? and 1 = 1 
+2019-01-21 10:24:04,208:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==> Parameters: 18(Long)
+2019-01-21 10:24:04,215:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:24:04,219:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_algorithm set name = ?,experiment_id = ?,algorithm_id = ?,algorithm_name_cn = ?,algorithm_name_en = ?,remark = ?,arguments = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-21 10:24:04,220:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==> Parameters: 第二个对dfs(String), 11(Long), 12(Long), 第二个对(String), second(String), 随便描述(String), [{"a":1,"b":2,"c":3}](String), SYS(String), 0(Integer), 0(Integer), 18(Long)
+2019-01-21 10:24:04,229:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-21 10:24:28,097:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_algorithm WHERE is_del = 0 and 1 = 1 
+2019-01-21 10:24:28,098:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:24:28,104:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-21 10:24:28,106:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn, algorithm_name_en, remark, arguments, create_time, create_by, update_time, update_by, ver, is_del from experiment_algorithm WHERE is_del = 0 and 1 = 1 limit 10 
+2019-01-21 10:24:28,107:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-21 10:24:28,116:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - <==      Total: 2

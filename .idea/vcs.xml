@@ -2,5 +2,12 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/earn-authorization" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/earn-base-object" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/earn-business-common" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/earn-business-management" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/earn-common-service" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/earn-common-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/earn-pom" vcs="Git" />
   </component>
 </project>

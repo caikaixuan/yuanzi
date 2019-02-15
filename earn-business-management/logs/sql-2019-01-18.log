@@ -1,0 +1,113 @@
+2019-01-18 09:48:35,674:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_record WHERE status = ? and 1 = 1 
+2019-01-18 09:48:35,731:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - ==> Parameters: D(String)
+2019-01-18 09:48:35,767:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 09:48:35,774:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave,status, create_by, update_time, update_by, ver, is_del from experiment_record WHERE status = ? and 1 = 1 limit 10 
+2019-01-18 09:48:35,775:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - ==> Parameters: D(String)
+2019-01-18 09:48:35,797:DEBUG qtp185674515-27 (BaseJdbcLogger.java:159) - <==      Total: 3
+2019-01-18 12:09:45,046:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 12:09:45,083:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:09:45,114:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 12:10:38,970:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 12:10:38,972:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:10:38,981:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 12:10:38,987:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 12:10:38,988:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:10:39,015:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==      Total: 9
+2019-01-18 12:12:47,178:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 12:12:47,179:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:12:47,185:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 12:12:47,188:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 12:12:47,189:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:12:47,205:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 12:23:31,393:DEBUG qtp418731780-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 12:23:31,393:DEBUG qtp418731780-26 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:23:31,399:DEBUG qtp418731780-26 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 12:23:31,402:DEBUG qtp418731780-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 12:23:31,402:DEBUG qtp418731780-26 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:23:31,416:DEBUG qtp418731780-26 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 12:48:15,116:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 12:48:15,183:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:48:15,239:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 12:48:15,244:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 12:48:15,245:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:48:15,276:DEBUG qtp418731780-28 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 12:51:39,926:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 12:51:39,960:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:51:39,991:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 12:51:39,997:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 12:51:39,998:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 12:51:40,018:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 13:06:42,975:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 13:06:43,006:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 13:06:43,028:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 13:06:43,033:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 13:06:43,034:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 13:06:43,052:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 16:04:48,052:DEBUG qtp100393301-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 16:04:48,101:DEBUG qtp100393301-25 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:04:48,135:DEBUG qtp100393301-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 16:05:02,045:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 16:05:02,049:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:05:02,058:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 16:05:02,065:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 16:05:02,066:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:05:02,096:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 16:05:18,839:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 16:05:18,841:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:05:18,850:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 16:06:13,347:DEBUG qtp100393301-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 16:06:13,349:DEBUG qtp100393301-30 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:06:13,357:DEBUG qtp100393301-30 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 16:06:13,361:DEBUG qtp100393301-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 16:06:13,363:DEBUG qtp100393301-30 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:06:13,380:DEBUG qtp100393301-30 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 16:15:02,770:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE ver = ? and is_del = ? and 1 = 1 
+2019-01-18 16:15:02,772:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:15:02,777:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 16:15:02,780:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE ver = ? and is_del = ? and 1 = 1 limit 10 
+2019-01-18 16:15:02,781:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - ==> Parameters: 0(Integer), 0(Integer)
+2019-01-18 16:15:02,790:DEBUG qtp100393301-27 (BaseJdbcLogger.java:159) - <==      Total: 8
+2019-01-18 16:31:13,971:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark) values (?,?,?,?) 
+2019-01-18 16:31:14,015:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String)
+2019-01-18 16:31:14,051:DEBUG qtp418731780-29 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 16:45:26,636:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 16:45:26,676:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String), {{"argument_name":"x","argument_description":"横向坐标","argument_type":"Long"}:{"argument_name":"y","argument_description":"纵向坐标","argument_type":"Long"}}(String)
+2019-01-18 16:45:26,690:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 17:08:47,495:DEBUG qtp185674515-29 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark) values (?,?,?,?) 
+2019-01-18 17:08:47,538:DEBUG qtp185674515-29 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String)
+2019-01-18 17:08:47,552:DEBUG qtp185674515-29 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 17:10:19,422:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark) values (?,?,?,?) 
+2019-01-18 17:10:19,425:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String)
+2019-01-18 17:10:19,436:DEBUG qtp185674515-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 17:47:03,333:DEBUG qtp448708339-29 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 17:47:03,368:DEBUG qtp448708339-29 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String), [{},{}](String)
+2019-01-18 17:47:03,411:DEBUG qtp448708339-29 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 17:52:23,729:DEBUG qtp448708339-26 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 17:52:23,732:DEBUG qtp448708339-26 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String), [{},{}](String)
+2019-01-18 17:52:23,740:DEBUG qtp448708339-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 17:54:50,115:DEBUG qtp1741618564-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 17:54:50,197:DEBUG qtp1741618564-27 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String), [{},{}](String)
+2019-01-18 17:54:50,214:DEBUG qtp1741618564-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 17:59:12,367:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 17:59:12,407:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试无法返回规范的json数据(String), 第三个算法(String), third algorithm(String), 吊炸天(String), {{"argument_name":"x","argument_description":"横向坐标","argument_type":"Long"}:{"argument_name":"y","argument_description":"纵向坐标","argument_type":"Long"}}(String)
+2019-01-18 17:59:12,421:DEBUG qtp418731780-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 18:37:25,744:DEBUG qtp1741618564-30 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 18:37:25,793:DEBUG qtp1741618564-30 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试list字段第五次(String), 第三个算法(String), third algorithm(String), 吊炸天(String), [{},{}](String)
+2019-01-18 18:37:25,812:DEBUG qtp1741618564-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 20:45:54,998:DEBUG qtp1741618564-30 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 20:45:55,028:DEBUG qtp1741618564-30 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试list字段第五次(String), 第三个算法(String), third algorithm(String), 吊炸天(String), {{"argument_name":"x","argument_description":"横向坐标","argument_type":"Long"}:{"argument_name":"y","argument_description":"纵向坐标","argument_type":"Long"}}(String)
+2019-01-18 20:45:55,067:DEBUG qtp1741618564-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 21:16:24,542:DEBUG qtp418731780-30 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-18 21:16:24,581:DEBUG qtp418731780-30 (BaseJdbcLogger.java:159) - ==> Parameters: 用来测试list字段第五次(String), 第三个算法(String), third algorithm(String), 吊炸天(String), [{"argument_name":"x","argument_description":"横向坐标","argument_type":"Long"},{"argument_name":"y","argument_description":"纵向坐标","argument_type":"Long"}](String)
+2019-01-18 21:16:24,651:DEBUG qtp418731780-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-18 21:16:44,069:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE is_del = 0 and 1 = 1 
+2019-01-18 21:16:44,070:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-18 21:16:44,113:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 21:16:44,117:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE is_del = 0 and 1 = 1 limit 10 
+2019-01-18 21:16:44,118:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-18 21:17:30,772:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from algorithm WHERE is_del = 0 and 1 = 1 
+2019-01-18 21:17:30,773:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-18 21:17:30,798:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-18 21:17:30,803:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_time,create_by, update_time, update_by, ver, is_del from algorithm WHERE is_del = 0 and 1 = 1 limit 10 
+2019-01-18 21:17:30,804:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-18 21:17:30,851:DEBUG qtp418731780-25 (BaseJdbcLogger.java:159) - <==      Total: 1

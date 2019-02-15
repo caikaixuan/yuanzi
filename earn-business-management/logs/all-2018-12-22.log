@@ -1,0 +1,79 @@
+2018-12-22 23:24:13,895:INFO main (EnumUtils.java:192) - EnumScanner将扫描:com.ygbc.brain
+2018-12-22 23:24:14,114:INFO main (EnumUtils.java:106) - 加载枚举:ObjectType
+2018-12-22 23:24:14,114:INFO main (EnumUtils.java:106) - 加载枚举:LetterOfCreditType
+2018-12-22 23:24:14,114:INFO main (EnumUtils.java:106) - 加载枚举:TransactionType
+2018-12-22 23:24:14,114:INFO main (EnumUtils.java:106) - 加载枚举:DocumentType
+2018-12-22 23:24:14,115:INFO main (EnumUtils.java:106) - 加载枚举:TransactionStatus
+2018-12-22 23:24:14,115:INFO main (EnumUtils.java:106) - 加载枚举:LcReferenceType
+2018-12-22 23:24:14,115:INFO main (EnumUtils.java:106) - 加载枚举:PendingStatus
+2018-12-22 23:24:14,115:INFO main (EnumUtils.java:106) - 加载枚举:ReferenceType
+2018-12-22 23:24:14,116:INFO main (EnumUtils.java:111) - 加载枚举:TrueFalse
+2018-12-22 23:24:14,116:INFO main (EnumUtils.java:111) - 加载枚举:OpenType
+2018-12-22 23:24:14,116:INFO main (EnumUtils.java:111) - 加载枚举:IssueFeeType
+2018-12-22 23:24:14,116:INFO main (EnumUtils.java:111) - 加载枚举:NegotiationType
+2018-12-22 23:24:14,116:INFO main (EnumUtils.java:111) - 加载枚举:IssueType
+2018-12-22 23:24:14,116:INFO main (EnumUtils.java:111) - 加载枚举:DocumentType
+2018-12-22 23:24:14,116:INFO main (EnumUtils.java:111) - 加载枚举:TransferType
+2018-12-22 23:24:14,117:INFO main (EnumUtils.java:111) - 加载枚举:UserStatus
+2018-12-22 23:24:14,117:INFO main (EnumUtils.java:111) - 加载枚举:AmountModifyType
+2018-12-22 23:24:14,117:INFO main (EnumUtils.java:111) - 加载枚举:DiscrepancyType
+2018-12-22 23:24:14,117:INFO main (EnumUtils.java:111) - 加载枚举:CloseReason
+2018-12-22 23:24:14,118:INFO main (EnumUtils.java:111) - 加载枚举:TransferFlag
+2018-12-22 23:24:14,118:INFO main (EnumUtils.java:111) - 加载枚举:AmendChargeBy
+2018-12-22 23:24:14,118:INFO main (EnumUtils.java:111) - 加载枚举:SightPayFlag
+2018-12-22 23:24:14,118:INFO main (EnumUtils.java:111) - 加载枚举:CheckDocumentResult
+2018-12-22 23:24:14,119:INFO main (EnumUtils.java:111) - 加载枚举:YesNo
+2018-12-22 23:24:14,119:INFO main (EnumUtils.java:111) - 加载枚举:AllowType
+2018-12-22 23:25:41,264:INFO qtp147089688-23 (LogAspect.java:32) - com.ygbc.brain.business.management.api.impl.DomesticBuyerDocumentServiceFacadeImpl.list开始执行
+2018-12-22 23:25:41,284:INFO qtp147089688-23 (LogAspect.java:51) - 请求参数1:{"data":{},"loginName":"admin","pending":false,"sessionId":"25af4a75-c2f9-43cc-8e24-73e71ca45e4a"}
+2018-12-22 23:25:41,428:DEBUG qtp147089688-23 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from lc_domestic_buyer_document dbd WHERE dbd.close_date is null order by dbd.receive_date DESC 
+2018-12-22 23:25:41,459:DEBUG qtp147089688-23 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-12-22 23:25:41,537:DEBUG qtp147089688-23 (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-12-22 23:25:41,546:DEBUG qtp147089688-23 (BaseJdbcLogger.java:159) - ==>  Preparing: select dbd.id as id, dbd.parent_code as parent_code, dbd.business_code as business_code, dbd.receive_date as receive_date, dbd.amount as amount, apl_pts.id as apl_pts_id, apl_pts.party_code as apl_pts_party_code, apl_pts.party_name as apl_pts_party_name, ben_pts.id as ben_pts_id, ben_pts.party_code as ben_pts_party_code, ben_pts.party_name as ben_pts_party_name, adv_pts.id as adv_pts_id, adv_pts.party_code as adv_pts_party_code, adv_pts.party_name as adv_pts_party_name from lc_domestic_buyer_document dbd left join sys_party_r_business apl_pts on apl_pts.object_code = dbd.parent_code and apl_pts.object_type = 'did' and apl_pts.role = 'apl' and apl_pts.is_del = 0 left join sys_party_r_business ben_pts on ben_pts.object_code = dbd.parent_code and ben_pts.object_type = 'did' and ben_pts.role = 'ben' and ben_pts.is_del = 0 left join sys_party_r_business adv_pts on adv_pts.object_code = dbd.parent_code and adv_pts.object_type = 'did' and adv_pts.role = 'adv' and adv_pts.is_del = 0 WHERE dbd.close_date is null order by dbd.receive_date DESC limit 10 
+2018-12-22 23:25:41,547:DEBUG qtp147089688-23 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-12-22 23:25:41,618:DEBUG qtp147089688-23 (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-12-22 23:25:41,764:INFO qtp147089688-23 (LogAspect.java:64) - com.ygbc.brain.business.management.api.impl.DomesticBuyerDocumentServiceFacadeImpl.list返回值:{"data":[{"amount":100.00,"businessCode":"BP0318000014","id":1,"parentCode":"LC0318000082","parties":{"adv":{"pts":{"id":1544,"partyCode":"004","partyName":"中国人民银行北京海淀支行"}},"apl":{"pts":{"id":1542,"partyCode":"001","partyName":"进口商"}},"ben":{"pts":{"id":1543,"partyCode":"002","partyName":"出口商"}}},"receiveDate":"2018-07-02 00:00:00"}],"pageNo":1,"pageSize":10,"respCode":"0000","respMsg":"成功","totalCount":1,"totalPage":1}
+2018-12-22 23:27:55,016:INFO qtp147089688-28 (LogAspect.java:32) - com.ygbc.brain.business.management.api.impl.DomesticBuyerDocumentServiceFacadeImpl.list开始执行
+2018-12-22 23:27:55,017:INFO qtp147089688-28 (LogAspect.java:51) - 请求参数1:{"data":{},"loginName":"admin","pending":false,"sessionId":"25af4a75-c2f9-43cc-8e24-73e71ca45e4a"}
+2018-12-22 23:27:55,028:DEBUG qtp147089688-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from lc_domestic_buyer_document dbd WHERE dbd.close_date is null order by dbd.receive_date DESC 
+2018-12-22 23:27:55,029:DEBUG qtp147089688-28 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-12-22 23:27:55,037:DEBUG qtp147089688-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-12-22 23:27:55,041:DEBUG qtp147089688-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select dbd.id as id, dbd.parent_code as parent_code, dbd.business_code as business_code, dbd.receive_date as receive_date, dbd.amount as amount, apl_pts.id as apl_pts_id, apl_pts.party_code as apl_pts_party_code, apl_pts.party_name as apl_pts_party_name, ben_pts.id as ben_pts_id, ben_pts.party_code as ben_pts_party_code, ben_pts.party_name as ben_pts_party_name, adv_pts.id as adv_pts_id, adv_pts.party_code as adv_pts_party_code, adv_pts.party_name as adv_pts_party_name from lc_domestic_buyer_document dbd left join sys_party_r_business apl_pts on apl_pts.object_code = dbd.parent_code and apl_pts.object_type = 'did' and apl_pts.role = 'apl' and apl_pts.is_del = 0 left join sys_party_r_business ben_pts on ben_pts.object_code = dbd.parent_code and ben_pts.object_type = 'did' and ben_pts.role = 'ben' and ben_pts.is_del = 0 left join sys_party_r_business adv_pts on adv_pts.object_code = dbd.parent_code and adv_pts.object_type = 'did' and adv_pts.role = 'adv' and adv_pts.is_del = 0 WHERE dbd.close_date is null order by dbd.receive_date DESC limit 10 
+2018-12-22 23:27:55,044:DEBUG qtp147089688-28 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-12-22 23:27:55,059:DEBUG qtp147089688-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-12-22 23:27:55,078:INFO qtp147089688-28 (LogAspect.java:64) - com.ygbc.brain.business.management.api.impl.DomesticBuyerDocumentServiceFacadeImpl.list返回值:{"data":[{"amount":100.00,"businessCode":"BP0318000014","id":1,"parentCode":"LC0318000082","parties":{"adv":{"pts":{"id":1544,"partyCode":"004","partyName":"中国人民银行北京海淀支行"}},"apl":{"pts":{"id":1542,"partyCode":"001","partyName":"进口商"}},"ben":{"pts":{"id":1543,"partyCode":"002","partyName":"出口商"}}},"receiveDate":"2018-07-02 00:00:00"}],"pageNo":1,"pageSize":10,"respCode":"0000","respMsg":"成功","totalCount":1,"totalPage":1}
+2018-12-22 23:35:29,445:INFO main (EnumUtils.java:192) - EnumScanner将扫描:com.ygbc.brain
+2018-12-22 23:35:29,649:INFO main (EnumUtils.java:106) - 加载枚举:ObjectType
+2018-12-22 23:35:29,649:INFO main (EnumUtils.java:106) - 加载枚举:LetterOfCreditType
+2018-12-22 23:35:29,650:INFO main (EnumUtils.java:106) - 加载枚举:TransactionType
+2018-12-22 23:35:29,650:INFO main (EnumUtils.java:106) - 加载枚举:DocumentType
+2018-12-22 23:35:29,650:INFO main (EnumUtils.java:106) - 加载枚举:TransactionStatus
+2018-12-22 23:35:29,650:INFO main (EnumUtils.java:106) - 加载枚举:LcReferenceType
+2018-12-22 23:35:29,650:INFO main (EnumUtils.java:106) - 加载枚举:PendingStatus
+2018-12-22 23:35:29,651:INFO main (EnumUtils.java:106) - 加载枚举:ReferenceType
+2018-12-22 23:35:29,651:INFO main (EnumUtils.java:111) - 加载枚举:TrueFalse
+2018-12-22 23:35:29,651:INFO main (EnumUtils.java:111) - 加载枚举:OpenType
+2018-12-22 23:35:29,651:INFO main (EnumUtils.java:111) - 加载枚举:IssueFeeType
+2018-12-22 23:35:29,652:INFO main (EnumUtils.java:111) - 加载枚举:NegotiationType
+2018-12-22 23:35:29,652:INFO main (EnumUtils.java:111) - 加载枚举:IssueType
+2018-12-22 23:35:29,654:INFO main (EnumUtils.java:111) - 加载枚举:DocumentType
+2018-12-22 23:35:29,654:INFO main (EnumUtils.java:111) - 加载枚举:TransferType
+2018-12-22 23:35:29,654:INFO main (EnumUtils.java:111) - 加载枚举:UserStatus
+2018-12-22 23:35:29,655:INFO main (EnumUtils.java:111) - 加载枚举:AmountModifyType
+2018-12-22 23:35:29,655:INFO main (EnumUtils.java:111) - 加载枚举:DiscrepancyType
+2018-12-22 23:35:29,655:INFO main (EnumUtils.java:111) - 加载枚举:CloseReason
+2018-12-22 23:35:29,655:INFO main (EnumUtils.java:111) - 加载枚举:TransferFlag
+2018-12-22 23:35:29,656:INFO main (EnumUtils.java:111) - 加载枚举:AmendChargeBy
+2018-12-22 23:35:29,656:INFO main (EnumUtils.java:111) - 加载枚举:SightPayFlag
+2018-12-22 23:35:29,657:INFO main (EnumUtils.java:111) - 加载枚举:CheckDocumentResult
+2018-12-22 23:35:29,657:INFO main (EnumUtils.java:111) - 加载枚举:YesNo
+2018-12-22 23:35:29,657:INFO main (EnumUtils.java:111) - 加载枚举:AllowType
+2018-12-22 23:35:48,848:INFO qtp147089688-25 (LogAspect.java:32) - com.ygbc.brain.business.management.api.impl.DomesticBuyerDocumentServiceFacadeImpl.list开始执行
+2018-12-22 23:35:48,869:INFO qtp147089688-25 (LogAspect.java:51) - 请求参数1:{"data":{},"loginName":"admin","pending":false,"sessionId":"25af4a75-c2f9-43cc-8e24-73e71ca45e4a"}
+2018-12-22 23:35:48,983:DEBUG qtp147089688-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from lc_domestic_buyer_document dbd WHERE dbd.close_date is null order by dbd.receive_date DESC 
+2018-12-22 23:35:49,021:DEBUG qtp147089688-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-12-22 23:35:49,049:DEBUG qtp147089688-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-12-22 23:35:49,056:DEBUG qtp147089688-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select dbd.id as id, dbd.parent_code as parent_code, dbd.business_code as business_code, dbd.receive_date as receive_date, dbd.amount as amount, apl_pts.id as apl_pts_id, apl_pts.party_code as apl_pts_party_code, apl_pts.party_name as apl_pts_party_name, ben_pts.id as ben_pts_id, ben_pts.party_code as ben_pts_party_code, ben_pts.party_name as ben_pts_party_name, adv_pts.id as adv_pts_id, adv_pts.party_code as adv_pts_party_code, adv_pts.party_name as adv_pts_party_name from lc_domestic_buyer_document dbd left join sys_party_r_business apl_pts on apl_pts.object_code = dbd.parent_code and apl_pts.object_type = 'did' and apl_pts.role = 'apl' and apl_pts.is_del = 0 left join sys_party_r_business ben_pts on ben_pts.object_code = dbd.parent_code and ben_pts.object_type = 'did' and ben_pts.role = 'ben' and ben_pts.is_del = 0 left join sys_party_r_business adv_pts on adv_pts.object_code = dbd.parent_code and adv_pts.object_type = 'did' and adv_pts.role = 'adv' and adv_pts.is_del = 0 WHERE dbd.close_date is null order by dbd.receive_date DESC limit 10 
+2018-12-22 23:35:49,065:DEBUG qtp147089688-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2018-12-22 23:35:49,083:DEBUG qtp147089688-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2018-12-22 23:35:49,227:INFO qtp147089688-25 (LogAspect.java:64) - com.ygbc.brain.business.management.api.impl.DomesticBuyerDocumentServiceFacadeImpl.list返回值:{"data":[{"amount":100.00,"businessCode":"BP0318000014","id":1,"parentCode":"LC0318000082","parties":{"adv":{"pts":{"id":1544,"partyCode":"004","partyName":"中国人民银行北京海淀支行"}},"apl":{"pts":{"id":1542,"partyCode":"001","partyName":"进口商"}},"ben":{"pts":{"id":1543,"partyCode":"002","partyName":"出口商"}}},"receiveDate":"2018-07-02 00:00:00"}],"pageNo":1,"pageSize":10,"respCode":"0000","respMsg":"成功","totalCount":1,"totalPage":1}

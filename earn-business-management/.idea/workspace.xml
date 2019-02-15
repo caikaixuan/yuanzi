@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ce9bfe73-cf00-412d-8e5a-d2562555a9f7" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/AnswerRecordServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/ChargeRecordServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/InviteNumberServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/ParticipantPoolChartServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/PoolServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/QuestionServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/SysParameterServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/TopicServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/UserPoolRecordServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/UserServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/WithdrawRecordServiceFacade.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/answer_record/CreateAnswerRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/answer_record/DeleteAnswerRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/answer_record/QueryAnswerRecordDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/answer_record/QueryAnswerRecordListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/answer_record/UpdateAnswerRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/charge_record/CreateChargeRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/charge_record/DeleteChargeRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/charge_record/QueryChargeRecordDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/charge_record/QueryChargeRecordListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/charge_record/UpdateChargeRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/invite_number/CreateInviteNumberReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/invite_number/DeleteInviteNumberReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/invite_number/QueryInviteNumberDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/invite_number/QueryInviteNumberListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/invite_number/UpdateInviteNumberReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/participant_pool_chart/CreateParticipantPoolChartReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/participant_pool_chart/DeleteParticipantPoolChartReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/participant_pool_chart/QueryParticipantPoolChartDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/participant_pool_chart/QueryParticipantPoolChartListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/participant_pool_chart/UpdateParticipantPoolChartReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool/CreatePoolReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool/DeletePoolReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool/QueryPoolDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool/QueryPoolListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool/UpdatePoolReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool_record_chart/CreatePoolRecordChartReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool_record_chart/DeletePoolRecordChartReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool_record_chart/QueryPoolRecordChartDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool_record_chart/QueryPoolRecordChartListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/pool_record_chart/UpdatePoolRecordChartReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/question/CreateQuestionReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/question/DeleteQuestionReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/question/QueryQuestionDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/question/QueryQuestionListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/question/UpdateQuestionReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/sys_parameter/CreateSysParameterReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/sys_parameter/DeleteSysParameterReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/sys_parameter/QuerySysParameterDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/sys_parameter/QuerySysParameterListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/sys_parameter/UpdateSysParameterReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/topic/CreateTopicReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/topic/DeleteTopicReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/topic/QueryTopicDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/topic/QueryTopicListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/topic/UpdateTopicReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user/CreateUserReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user/DeleteUserReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user/QueryUserDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user/QueryUserListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user/SignUpReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user/UpdateUserReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user_pool_record/CreateUserPoolRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user_pool_record/DeleteUserPoolRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user_pool_record/QueryUserPoolRecordDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user_pool_record/QueryUserPoolRecordListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/user_pool_record/UpdateUserPoolRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/withdraw_record/CreateWithdrawRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/withdraw_record/DeleteWithdrawRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/withdraw_record/QueryWithdrawRecordDetailReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/withdraw_record/QueryWithdrawRecordListReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/withdraw_record/UpdateWithdrawRecordReqDTO.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/AnswerRecordModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/ChargeRecordModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/InviteNumberModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/ParticipantPoolChartModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/PoolModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/PoolRecordChartModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/QuestionModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/SysParameterModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/TopicModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/UserModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/UserPoolRecordModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/WithdrawRecordModel.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/ChargeRecordServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/InviteNumberServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/ParticipantPooChartlServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/PoolServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/QuestionServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/SysParameterServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/TopicServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/UserPoolRecordServiceFacadeImpl.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/answer_record/AnswerRecordCreateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/answer_record/AnswerRecordDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/answer_record/AnswerRecordDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/answer_record/AnswerRecordListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/answer_record/AnswerRecordUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/charge_record/ChargeRecordCreateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/charge_record/ChargeRecordDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/charge_record/ChargeRecordDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/charge_record/ChargeRecordListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/charge_record/ChargeRecordUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/invite_number/InviteNumberCreateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/invite_number/InviteNumberDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/invite_number/InviteNumberDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/invite_number/InviteNumberListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/invite_number/InviteNumberUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/participant_pool_chart/ParticipantPoolChartCreateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/participant_pool_chart/ParticipantPoolChartDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/participant_pool_chart/ParticipantPoolChartDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/participant_pool_chart/ParticipantPoolChartListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/participant_pool_chart/ParticipantPoolChartUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/pool/PoolCreateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/pool/PoolDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/pool/PoolDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/pool/PoolListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/pool/PoolUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/question/QuestionCreateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/question/QuestionDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/question/QuestionDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/question/QuestionListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/question/QuestionUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/sys_parameter/SysParameterCreateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/sys_parameter/SysParameterDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/sys_parameter/SysParameterDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/sys_parameter/SysParameterListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/sys_parameter/SysParameterUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/topic/TopicDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/topic/TopicDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/topic/TopicListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/topic/TopicUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user/UserDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user/UserDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user/UserListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user/UserUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user_pool_record/UserPoolRecordDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user_pool_record/UserPoolRecordListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user_pool_record/UserPoolRecordUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/withdraw_record/WithdrawRecordDeleteService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/withdraw_record/WithdrawRecordDetailService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/withdraw_record/WithdrawRecordListService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/withdraw_record/WithdrawRecordUpdateService.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/resources/earn_sql_script/0.sql" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/AnswerRecordController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/ChargeRecordController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/InviteNumberController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/ParticipantPoolChartController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/PoolController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/QuestionController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/SysParameterController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/TopicController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/UserController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/UserPoolRecordController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/WithdrawRecordController.java" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/getQuesiton/GetQuestion.java" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/pom.xml" afterPath="$PROJECT_DIR$/earn-business-management-api/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/AlgorithmServiceFacade.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/ExperimentAlgorithmServiceFacade.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/ExperimentRecordServiceFacade.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/ExperimentServiceFacade.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/ImagePieceServiceFacade.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/ImageServiceFacade.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/CreateAlgorithmReqDTO.java" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/CreateAlgorithmReqDTO.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/DeleteAlgorithmReqDTO.java" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/DeleteAlgorithmReqDTO.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/QueryAlgorithmDetailReqDTO.java" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/QueryAlgorithmDetailReqDTO.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/QueryAlgorithmListReqDTO.java" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/QueryAlgorithmListReqDTO.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/UpdateAlgorithmReqDTO.java" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/algorithm/UpdateAlgorithmReqDTO.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experiment/CreateExperimentReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experiment/DeleteExperimentReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experiment/QueryExperimentDetailReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experiment/QueryExperimentListReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experiment/UpdateExperimentReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentAlgorithm/CreateExperimentAlgorithmReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentAlgorithm/DeleteExperimentAlgorithmReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentAlgorithm/QueryExperimentAlgorithmDetailReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentAlgorithm/QueryExperimentAlgorithmListReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentAlgorithm/UpdateExperimentAlgorithmReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentRecord/CreateExperimentRecordReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentRecord/DeleteExperimentRecordReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentRecord/QueryExperimentRecordDetailReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentRecord/QueryExperimentRecordListReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/experimentRecord/UpdateExperimentRecordReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/image/CreateImageReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/image/DeleteImageReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/image/QueryImageDetailReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/image/QueryImageListReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/image/UpdateImageReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/imagePiece/CreateImagePieceReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/imagePiece/DeleteImagePieceReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/imagePiece/QueryImagePieceDetailReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/imagePiece/QueryImagePieceListReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/dto/imagePiece/UpdateImagePieceReqDTO.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/enums/ExperimentRecordStatus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/enums/ExperimentStatus.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/enums/ExperimentType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/enums/ImageSceneType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/enums/ImageType.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/AlgorithmModel.java" afterPath="$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/AlgorithmModel.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/ExperimentAlgorithmModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/ExperimentModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/ExperimentRecordModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/ImageModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-api/src/main/java/com/ygbc/brain/business/management/api/model/ImagePieceModel.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/pom.xml" afterPath="$PROJECT_DIR$/earn-business-management-service/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/AlgorithmServiceFacadeImpl.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/WithdrawRecordServiceFacadeImpl.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/ExperimentAlgorithmServiceFacadeImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/ExperimentRecordServiceFacadeImpl.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/UserServiceFacadeImpl.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/ExperimentServiceFacadeImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/ImagePieceServiceFacadeImpl.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/ImageServiceFacadeImpl.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/api/impl/AnswerRecordServiceFacadeImpl.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/dao/AlgorithmDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/dao/ExperimentAlgorithmDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/dao/ExperimentDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/dao/ExperimentRecordDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/dao/ImageDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/dao/ImagePieceDao.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/model/AlgorithmData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/model/Argument.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/model/ExperimentAlgorithmData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/model/ExperimentData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/model/ExperimentRecordData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/model/ImageData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/dal/model/ImagePieceData.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/AlgorithmCreateService.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/withdraw_record/WithdrawRecordCreateService.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/AlgorithmDeleteService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/AlgorithmDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/AlgorithmListService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/AlgorithmUpdateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentAlgorithmCreateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentAlgorithmDeleteService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentAlgorithmDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentAlgorithmListService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentAlgorithmUpdateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentCreateService.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/topic/TopicCreateService.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentDeleteService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentListService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentRecordCreateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentRecordDeleteService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentRecordDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentRecordListService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentRecordUpdateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ExperimentUpdateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImageCreateService.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user/UserCreateService.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImageDeleteService.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user_pool_record/UserPoolRecordDeleteService.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImageDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImageListService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImagePieceCreateService.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/user_pool_record/UserPoolRecordCreateService.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImagePieceDeleteService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImagePieceDetailService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImagePieceListService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImagePieceUpdateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/ImageUpdateService.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/validator/DeleteAlgorithmValidator.java" afterPath="$PROJECT_DIR$/earn-business-management-service/src/main/java/com/ygbc/brain/business/management/service/validator/DeleteAlgorithmValidator.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/validator/DeleteExperimentAlgorithmValidator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/validator/DeleteExperimentRecordValidator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/validator/DeleteExperimentValidator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/validator/DeleteImagePieceValidator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/java/com/ygbc/brain/business/management/service/validator/DeleteImageValidator.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/resources/mappers/AlgorithmMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/resources/mappers/ExperimentAlgorithmMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/resources/mappers/ExperimentMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/resources/mappers/ExperimentRecordMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/resources/mappers/ImageMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-service/src/main/resources/mappers/ImagePieceMapper.xml" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/pom.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/pom.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/java/com/ygbc/brain/business/management/web/SwaggerConfig.java" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/java/com/ygbc/brain/business/management/web/SwaggerConfig.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/AlgorithmServiceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/ExperimentAlgorithmServiceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/ExperimentRecordServiceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/ExperimentServiceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/ImagePieceServiceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/java/com/ygbc/brain/business/management/web/controller/ImageServiceController.java" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/env/env.properties" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/env/env.properties" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/freemarkerStaticClass.properties" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/freemarkerStaticClass.properties" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/jetty-context.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/jetty-context.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/log4j2.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/log4j2.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/mybatis/mybatis-config.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/mybatis/mybatis-config.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/spring-aspect.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/spring-aspect.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/spring-dubbo.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/spring-dubbo.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/spring-mybatis.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/spring-mybatis.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/resources/spring-redis.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/resources/spring-redis.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/webapp/META-INF/context.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/webapp/META-INF/context.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/webapp/WEB-INF/springmvc-servlet.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/webapp/WEB-INF/springmvc-servlet.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/main/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/java/com/ygbc/brain/test/BaseTest.java" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/java/com/ygbc/brain/test/BaseTest.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/java/com/ygbc/brain/test/ExperimentControllerTest.java" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/java/com/ygbc/brain/test/ExperimentControllerTest.java" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/applicationContext.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/applicationContext.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/document_template/ditopn_xyz.ftl" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/document_template/ditopn_xyz.ftl" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/env/env.properties" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/env/env.properties" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/freemarkerStaticClass.properties" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/freemarkerStaticClass.properties" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/jetty-context.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/jetty-context.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/log4j2.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/log4j2.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/mybatis/mybatis-config.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/mybatis/mybatis-config.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/spring-aspect.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/spring-aspect.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/spring-dubbo.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/spring-dubbo.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/spring-mybatis.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/spring-mybatis.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/resources/spring-redis.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/resources/spring-redis.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/webapp/META-INF/context.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/webapp/META-INF/context.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/webapp/WEB-INF/springmvc-servlet.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/webapp/WEB-INF/springmvc-servlet.xml" />
+      <change beforePath="$PROJECT_DIR$/brain-business-management-web/src/test/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/earn-business-management-web/src/test/webapp/WEB-INF/web.xml" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+    </list>
+    <ignored path="$PROJECT_DIR$/earn-business-management-service/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/earn-business-management-api/target/" />
+    <ignored path="$PROJECT_DIR$/earn-business-management-web/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="AnswerRecordServiceFacade.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/AnswerRecordServiceFacade.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource ProjectPane="true" />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
+              <item name=".idea" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
+              <item name="earn-business-management-api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
+              <item name="earn-business-management-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
+              <item name="earn-business-management-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
+              <item name="earn-business-management-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="earn-business-management" type="b2602c69:ProjectViewProjectNode" />
+              <item name="earn-business-management" type="462c0819:PsiDirectoryNode" />
+              <item name="earn-business-management-api" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <predefined_log_file id="idea.log" enabled="true" />
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce9bfe73-cf00-412d-8e5a-d2562555a9f7" name="Default" comment="" />
+      <created>1550208646472</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1550208646472</updated>
+      <workItem from="1550208647685" duration="1003000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1003000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32889965" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/earn-business-management-api/src/main/java/com/ygbc/brain/business/management/api/AnswerRecordServiceFacade.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

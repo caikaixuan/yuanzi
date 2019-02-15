@@ -1,0 +1,207 @@
+2019-01-03 09:48:10,555:DEBUG qtp1908505175-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn,algorithm_name_en,remark,arguments, create_by, update_time, update_by, ver, is_del from experiment_algorithm where id = ? and 1 = 1 
+2019-01-03 09:48:10,594:DEBUG qtp1908505175-27 (BaseJdbcLogger.java:159) - ==> Parameters: 10(Long)
+2019-01-03 09:48:10,638:DEBUG qtp1908505175-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:48:10,642:DEBUG qtp1908505175-27 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_algorithm set name = ?,experiment_id = ?,algorithm_id = ?,algorithm_name_cn = ?,algorithm_name_en = ?,remark = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 09:48:10,643:DEBUG qtp1908505175-27 (BaseJdbcLogger.java:159) - ==> Parameters: 第二个对(String), 11(Long), 12(Long), 第二个对(String), second(String), 随便描述(String), SYS(String), 0(Integer), 0(Integer), 10(Long)
+2019-01-03 09:48:10,667:DEBUG qtp1908505175-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 09:50:06,234:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn,algorithm_name_en,remark,arguments, create_by, update_time, update_by, ver, is_del from experiment_algorithm where id = ? and 1 = 1 
+2019-01-03 09:50:06,240:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 09:50:06,247:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:50:06,255:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_algorithm set name = ?,experiment_id = ?,algorithm_id = ?,algorithm_name_cn = ?,algorithm_name_en = ?,remark = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 09:50:06,257:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==> Parameters: 第一个实验算法对(String), 9(Long), 10(Long), 吊炸天的算法(String), best algorithm(String), 任性的描述(String), SYS(String), 0(Integer), 1(Integer), 9(Long)
+2019-01-03 09:50:06,278:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 09:51:54,951:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into experiment_algorithm(name,experiment_id,algorithm_id,algorithm_name_cn,algorithm_name_en,remark) values (?,?,?,?,?,?) 
+2019-01-03 09:51:54,953:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==> Parameters: 第四个对(String), 12(Long), 13(Long), 第四个对(String), forth(String), 随便描述(String)
+2019-01-03 09:51:54,974:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 09:52:14,370:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_by, update_time, update_by, ver, is_del from algorithm where id = ? and 1 = 1 
+2019-01-03 09:52:14,371:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==> Parameters: 12(Long)
+2019-01-03 09:52:14,380:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - <==      Total: 0
+2019-01-03 09:52:27,113:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_by, update_time, update_by, ver, is_del from algorithm where id = ? and 1 = 1 
+2019-01-03 09:52:27,113:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==> Parameters: 11(Long)
+2019-01-03 09:52:27,119:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:52:44,393:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_by, update_time, update_by, ver, is_del from algorithm where id = ? and 1 = 1 
+2019-01-03 09:52:44,394:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==> Parameters: 12(Long)
+2019-01-03 09:52:44,403:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - <==      Total: 0
+2019-01-03 09:53:34,798:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from sys_role WHERE 1 = 1 
+2019-01-03 09:53:34,800:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 09:53:34,808:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:53:34,813:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn,algorithm_name_en,remark,arguments, create_by, update_time, update_by, ver, is_del from experiment_algorithm WHERE 1 = 1 limit 10 
+2019-01-03 09:53:34,813:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 09:53:34,821:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - <==      Total: 4
+2019-01-03 09:53:46,264:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_by, update_time, update_by, ver, is_del from algorithm where id = ? and 1 = 1 
+2019-01-03 09:53:46,265:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - ==> Parameters: 12(Long)
+2019-01-03 09:53:46,274:DEBUG qtp1908505175-28 (BaseJdbcLogger.java:159) - <==      Total: 0
+2019-01-03 09:54:07,541:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_by, update_time, update_by, ver, is_del from algorithm where id = ? and 1 = 1 
+2019-01-03 09:54:07,541:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - ==> Parameters: 12(Long)
+2019-01-03 09:54:07,549:DEBUG qtp1908505175-30 (BaseJdbcLogger.java:159) - <==      Total: 0
+2019-01-03 09:58:15,422:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn,algorithm_name_en,remark,arguments, create_by, update_time, update_by, ver, is_del from experiment_algorithm where id = ? and 1 = 1 
+2019-01-03 09:58:15,457:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 12(Long)
+2019-01-03 09:58:15,494:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:58:54,707:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn,algorithm_name_en,remark,arguments, create_by, update_time, update_by, ver, is_del from experiment_algorithm where id = ? and 1 = 1 
+2019-01-03 09:58:54,707:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 12(Long)
+2019-01-03 09:58:54,717:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:58:54,721:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_algorithm set name = ?,experiment_id = ?,algorithm_id = ?,algorithm_name_cn = ?,algorithm_name_en = ?,remark = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 09:58:54,723:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 第四个对(String), 12(Long), 13(Long), 第四个对(String), forth(String), 随便描述(String), SYS(String), 0(Integer), 1(Integer), 12(Long)
+2019-01-03 09:58:54,743:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 09:59:11,126:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from sys_role WHERE 1 = 1 
+2019-01-03 09:59:11,129:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 09:59:11,137:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:59:11,145:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn,algorithm_name_en,remark,arguments, create_by, update_time, update_by, ver, is_del from experiment_algorithm WHERE 1 = 1 limit 10 
+2019-01-03 09:59:11,147:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 09:59:11,159:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - <==      Total: 4
+2019-01-03 09:59:34,970:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_id, algorithm_id, algorithm_name_cn,algorithm_name_en,remark,arguments, create_by, update_time, update_by, ver, is_del from experiment_algorithm where id = ? and 1 = 1 
+2019-01-03 09:59:34,972:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 12(Long)
+2019-01-03 09:59:34,982:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 09:59:34,986:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_algorithm set name = ?,experiment_id = ?,algorithm_id = ?,algorithm_name_cn = ?,algorithm_name_en = ?,remark = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 09:59:34,987:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 第二个对dfs(String), 11(Long), 12(Long), 第二个对(String), second(String), 随便描述(String), SYS(String), 1(Integer), 1(Integer), 12(Long)
+2019-01-03 09:59:35,010:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 11:51:57,491:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into experiment_record(name,experiment_code,subject_user_id,subject_user_name,experiment_period,experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+2019-01-03 11:51:57,555:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 第一个实验记录(String), 9(String), 10(String), tom(String), 10(Integer), 北京(String), 恐怖(String), 1000(Integer), 2000(Integer), 10(Integer), 123456(String), AK47(String), 26(Integer), 这个脑波的图样跟爱因斯坦的一模一样卧槽(String)
+2019-01-03 11:52:35,124:DEBUG qtp1001946422-28 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into experiment_record(name,experiment_code,subject_user_id,subject_user_name,experiment_period,experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+2019-01-03 11:52:35,128:DEBUG qtp1001946422-28 (BaseJdbcLogger.java:159) - ==> Parameters: 第一个实验记录(String), 9(String), 10(String), tom(String), 10(Integer), 北京(String), 1(String), 1000(Integer), 2000(Integer), 10(Integer), 123456(String), AK47(String), 26(Integer), 这个脑波的图样跟爱因斯坦的一模一样卧槽(String)
+2019-01-03 11:52:35,154:DEBUG qtp1001946422-28 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 12:02:36,316:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into experiment_record(name,experiment_code,subject_user_id,subject_user_name,experiment_period,experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+2019-01-03 12:02:36,318:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==> Parameters: 第一个实验记录(String), 9(String), 10(String), tom(String), 10(Integer), 北京(String), 1(String), 1000(Integer), 2000(Integer), 10(Integer), 123456(String), AK47(String), 26(Integer), 这个脑波的图样跟爱因斯坦的一模一样卧槽(String)
+2019-01-03 12:02:36,341:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 12:07:34,491:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_userId, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record where id = ? and 1 = 1 
+2019-01-03 12:07:34,492:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 12:10:07,410:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record where id = ? and 1 = 1 
+2019-01-03 12:10:07,445:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 12:10:07,529:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:10:07,536:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_record set name = ?,experiment_code = ?,subject_user_id = ?,subject_user_name = ?,experiment_period = ?,experiment_place = ?,experiment_type = ?,hz = ?,sample_rate = ?,experiment_impedance = ?,reference_electrode = ?,device_number = ?,temperature = ?,brain_wave = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 12:10:07,543:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==> Parameters: 第一个实验记录(String), 9(String), 10(String), tom(String), 10(Integer), 上海(String), 1(String), 1000(Integer), 2000(Integer), 10(Integer), 123456(String), AK47(String), 26(Integer), 这个脑波的图样跟爱因斯坦的一模一样卧槽(String), SYS(String), 0(Integer), 0(Integer), 9(Long)
+2019-01-03 12:10:07,565:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 12:13:07,433:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_record WHERE 1 = 1 
+2019-01-03 12:13:07,434:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:13:07,441:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:13:07,445:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record WHERE 1 = 1 limit 10 
+2019-01-03 12:13:07,446:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:13:07,454:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - <==      Total: 2
+2019-01-03 12:41:41,669:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record where id = ? and 1 = 1 
+2019-01-03 12:41:41,674:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 12:41:41,693:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:42:41,802:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_record WHERE 1 = 1 
+2019-01-03 12:42:41,804:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:42:41,823:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:42:41,826:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record WHERE 1 = 1 limit 10 
+2019-01-03 12:42:41,827:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:42:41,854:DEBUG qtp1001946422-29 (BaseJdbcLogger.java:159) - <==      Total: 2
+2019-01-03 12:43:00,973:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record where id = ? and 1 = 1 
+2019-01-03 12:43:00,975:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 12:43:01,162:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:43:01,168:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_record set name = ?,experiment_code = ?,subject_user_id = ?,subject_user_name = ?,experiment_period = ?,experiment_place = ?,experiment_type = ?,hz = ?,sample_rate = ?,experiment_impedance = ?,reference_electrode = ?,device_number = ?,temperature = ?,brain_wave = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 12:43:01,173:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 第一个实验记录(String), 9(String), 10(String), tom(String), 10(Integer), 上海(String), 1(String), 1000(Integer), 2000(Integer), 10(Integer), 123456(String), AK47(String), 26(Integer), 这个脑波的图样跟爱因斯坦的一模一样卧槽(String), SYS(String), 1(Integer), 1(Integer), 9(Long)
+2019-01-03 12:43:01,422:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 12:44:10,492:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record where id = ? and 1 = 1 
+2019-01-03 12:44:10,493:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 12:44:10,516:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:44:10,521:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: update experiment_record set name = ?,experiment_code = ?,subject_user_id = ?,subject_user_name = ?,experiment_period = ?,experiment_place = ?,experiment_type = ?,hz = ?,sample_rate = ?,experiment_impedance = ?,reference_electrode = ?,device_number = ?,temperature = ?,brain_wave = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 12:44:10,524:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 第一个实验记录(String), 9(String), 10(String), tom(String), 10(Integer), hongkong(String), 1(String), 1000(Integer), 2000(Integer), 10(Integer), 123456(String), AK47(String), 26(Integer), 这个脑波的图样跟爱因斯坦的一模一样卧槽(String), SYS(String), 2(Integer), 1(Integer), 9(Long)
+2019-01-03 12:44:10,577:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 12:54:49,937:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_record WHERE 1 = 1 
+2019-01-03 12:54:49,938:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:54:49,949:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:54:49,956:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record WHERE 1 = 1 limit 10 
+2019-01-03 12:54:49,957:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:54:49,970:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==      Total: 2
+2019-01-03 12:55:13,876:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into experiment_record(name,experiment_code,subject_user_id,subject_user_name,experiment_period,experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave) values (?,?,?,?,?,?,?,?,?,?,?,?,?,?) 
+2019-01-03 12:55:13,877:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==> Parameters: 第三个实验记录(String), 9(String), 11(String), tom(String), 10(Integer), 北京(String), 1(String), 1000(Integer), 2000(Integer), 10(Integer), 123456(String), AK47(String), 26(Integer), 这个脑波的图样跟爱因斯坦的一模一样卧槽(String)
+2019-01-03 12:55:13,908:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 12:55:19,689:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_record WHERE 1 = 1 
+2019-01-03 12:55:19,690:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:55:19,699:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:55:19,701:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record WHERE 1 = 1 limit 10 
+2019-01-03 12:55:19,702:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:55:19,718:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 3
+2019-01-03 12:58:13,587:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from experiment_record WHERE 1 = 1 
+2019-01-03 12:58:13,592:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:58:13,603:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 12:58:13,610:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, experiment_code, subject_user_id, subject_user_name,experiment_start_time,experiment_end_time,experiment_period, experiment_place,experiment_type,hz,sample_rate,experiment_impedance,reference_electrode,device_number,temperature,brain_wave, create_by, update_time, update_by, ver, is_del from experiment_record WHERE 1 = 1 limit 10 
+2019-01-03 12:58:13,612:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 12:58:13,904:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 3
+2019-01-03 13:40:55,901:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into image(name,image_size_x,image_size_y,image_type,device_name,scene_location_longitude,scene_location_latitude,scene_type,management_user_code,image_info) values (?,?,?,?,?,?,?,?,?,?) 
+2019-01-03 13:40:55,945:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==> Parameters: 脑图(String), 320(Long), 640(Long), 1(String), ak-47(String), 32(String), 96(String), 2(String), 12(String), 这是第一号脑图片(String)
+2019-01-03 13:40:55,977:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 13:41:46,113:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_size_x, image_size_y, get_time,image_type,device_name,scene_location_longitude,scene_location_latitude, scene_type,device_name,management_user_code,image_info, create_by, update_time, update_by, ver, is_del from image where id = ? and 1 = 1 
+2019-01-03 13:41:46,116:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 13:41:46,143:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 13:42:03,282:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_size_x, image_size_y, get_time,image_type,device_name,scene_location_longitude,scene_location_latitude, scene_type,device_name,management_user_code,image_info, create_by, update_time, update_by, ver, is_del from image where id = ? and 1 = 1 
+2019-01-03 13:42:03,283:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 13:42:03,293:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 13:42:03,296:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: update image set name = ?,image_size_x = ?,image_size_y = ?,image_type = ?,device_name = ?,scene_location_longitude = ?,scene_location_latitude = ?,scene_type = ?,management_user_code = ?,image_info = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 13:42:03,298:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 风景图(String), 320(Long), 640(Long), 1(String), ak-47(String), 32(String), 96(String), 2(String), 12(String), 这是第二号脑图片(String), SYS(String), 0(Integer), 0(Integer), 9(Long)
+2019-01-03 13:42:03,321:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 13:42:22,674:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_size_x, image_size_y, get_time,image_type,device_name,scene_location_longitude,scene_location_latitude, scene_type,device_name,management_user_code,image_info, create_by, update_time, update_by, ver, is_del from image where id = ? and 1 = 1 
+2019-01-03 13:42:22,675:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 13:42:22,683:DEBUG qtp1001946422-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 13:42:39,336:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from image WHERE 1 = 1 
+2019-01-03 13:42:39,337:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 13:42:39,345:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 13:42:39,349:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_size_x, image_size_y, get_time,image_type,device_name,scene_location_longitude,scene_location_latitude, scene_type,device_name,management_user_code,image_info, create_by, update_time, update_by, ver, is_del from image WHERE 1 = 1 limit 10 
+2019-01-03 13:42:39,350:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 13:42:39,359:DEBUG qtp1001946422-27 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 13:44:26,424:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_size_x, image_size_y, get_time,image_type,device_name,scene_location_longitude,scene_location_latitude, scene_type,device_name,management_user_code,image_info, create_by, update_time, update_by, ver, is_del from image where id = ? and 1 = 1 
+2019-01-03 13:44:26,425:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 13:44:26,435:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 13:44:26,439:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==>  Preparing: update image set name = ?,image_size_x = ?,image_size_y = ?,image_type = ?,device_name = ?,scene_location_longitude = ?,scene_location_latitude = ?,scene_type = ?,management_user_code = ?,image_info = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 13:44:26,440:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - ==> Parameters: 风景图(String), 320(Long), 640(Long), 1(String), ak-47(String), 32(String), 96(String), 2(String), 12(String), 这是第二号脑图片(String), SYS(String), 1(Integer), 1(Integer), 9(Long)
+2019-01-03 13:44:26,460:DEBUG qtp1001946422-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 13:45:48,025:DEBUG qtp504006221-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into image(name,image_size_x,image_size_y,image_type,device_name,scene_location_longitude,scene_location_latitude,scene_type,management_user_code,image_info) values (?,?,?,?,?,?,?,?,?,?) 
+2019-01-03 13:45:48,070:DEBUG qtp504006221-27 (BaseJdbcLogger.java:159) - ==> Parameters: 脑图二号(String), 320(Long), 640(Long), 1(String), ak-47(String), 32(String), 96(String), 2(String), 12(String), 这是第二号脑图片(String)
+2019-01-03 13:45:48,236:DEBUG qtp504006221-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 13:45:56,823:DEBUG qtp504006221-26 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into image(name,image_size_x,image_size_y,image_type,device_name,scene_location_longitude,scene_location_latitude,scene_type,management_user_code,image_info) values (?,?,?,?,?,?,?,?,?,?) 
+2019-01-03 13:45:56,825:DEBUG qtp504006221-26 (BaseJdbcLogger.java:159) - ==> Parameters: 脑图三号(String), 320(Long), 640(Long), 1(String), ak-47(String), 32(String), 96(String), 2(String), 12(String), 这是第三号脑图片(String)
+2019-01-03 13:45:56,850:DEBUG qtp504006221-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 13:46:04,245:DEBUG qtp504006221-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from image WHERE 1 = 1 
+2019-01-03 13:46:04,247:DEBUG qtp504006221-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 13:46:04,270:DEBUG qtp504006221-29 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 13:46:04,274:DEBUG qtp504006221-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_size_x, image_size_y, get_time,image_type,scene_location_longitude,scene_location_latitude, scene_type,device_name,management_user_code,image_info, create_by, update_time, update_by, ver, is_del from image WHERE 1 = 1 limit 10 
+2019-01-03 13:46:04,275:DEBUG qtp504006221-29 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 13:46:04,295:DEBUG qtp504006221-29 (BaseJdbcLogger.java:159) - <==      Total: 3
+2019-01-03 14:25:58,808:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into imagePiece(name,image_id,image_patch_num,image_patch_pyramid,image_position,image_group) values (?,?,?,?,?,?) 
+2019-01-03 14:25:58,849:DEBUG qtp1001946422-26 (BaseJdbcLogger.java:159) - ==> Parameters: 图片名称(String), 9(String), 42(String), 32(Long), /user/desktop(String), 23(Long)
+2019-01-03 14:28:01,046:DEBUG qtp1397643446-26 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into image_piece(name,image_id,image_patch_num,image_patch_pyramid,image_position,image_group) values (?,?,?,?,?,?) 
+2019-01-03 14:28:01,088:DEBUG qtp1397643446-26 (BaseJdbcLogger.java:159) - ==> Parameters: 图片名称(String), 9(String), 42(String), 32(Long), /user/desktop(String), 23(Long)
+2019-01-03 14:28:01,116:DEBUG qtp1397643446-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 14:28:45,993:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_id, image_patch_num, image_patch_pyramid,image_position,image_group, create_by, update_time, update_by, ver, is_del from image_piece where id = ? and 1 = 1 
+2019-01-03 14:28:45,995:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 14:28:46,020:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 14:28:46,025:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==>  Preparing: update image_piece set name = ?,image_id = ?,image_patch_num = ?,image_patch_pyramid = ?,image_position = ?,image_group = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 14:28:46,027:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==> Parameters: 图片名称更新(String), 9(String), 42(String), 32(Long), /user/desktop(String), 23(Long), SYS(String), 0(Integer), 0(Integer), 9(Long)
+2019-01-03 14:28:46,049:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 14:29:14,587:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into image_piece(name,image_id,image_patch_num,image_patch_pyramid,image_position,image_group) values (?,?,?,?,?,?) 
+2019-01-03 14:29:14,590:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - ==> Parameters: 风景图(String), 9(String), 42(String), 32(Long), /user/desktop(String), 23(Long)
+2019-01-03 14:29:14,643:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 14:29:24,959:DEBUG qtp1397643446-27 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into image_piece(name,image_id,image_patch_num,image_patch_pyramid,image_position,image_group) values (?,?,?,?,?,?) 
+2019-01-03 14:29:24,961:DEBUG qtp1397643446-27 (BaseJdbcLogger.java:159) - ==> Parameters: 超跑图片(String), 9(String), 42(String), 32(Long), /user/desktop(String), 23(Long)
+2019-01-03 14:29:24,985:DEBUG qtp1397643446-27 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 14:29:42,354:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select count(1) from image_piece WHERE 1 = 1 
+2019-01-03 14:29:42,354:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 14:29:42,362:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 14:29:42,366:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_id, image_patch_num, image_patch_pyramid,image_position,image_group, create_by, update_time, update_by, ver, is_del from image_piece WHERE 1 = 1 limit 10 
+2019-01-03 14:29:42,367:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - ==> Parameters: 
+2019-01-03 14:29:42,374:DEBUG qtp1397643446-25 (BaseJdbcLogger.java:159) - <==      Total: 3
+2019-01-03 14:30:10,565:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_id, image_patch_num, image_patch_pyramid,image_position,image_group, create_by, update_time, update_by, ver, is_del from image_piece where id = ? and 1 = 1 
+2019-01-03 14:30:10,566:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==> Parameters: 10(Long)
+2019-01-03 14:30:10,575:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 14:30:26,087:DEBUG qtp1397643446-29 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, image_id, image_patch_num, image_patch_pyramid,image_position,image_group, create_by, update_time, update_by, ver, is_del from image_piece where id = ? and 1 = 1 
+2019-01-03 14:30:26,088:DEBUG qtp1397643446-29 (BaseJdbcLogger.java:159) - ==> Parameters: 9(Long)
+2019-01-03 14:30:26,096:DEBUG qtp1397643446-29 (BaseJdbcLogger.java:159) - <==      Total: 1
+2019-01-03 14:30:26,099:DEBUG qtp1397643446-29 (BaseJdbcLogger.java:159) - ==>  Preparing: update image_piece set name = ?,image_id = ?,image_patch_num = ?,image_patch_pyramid = ?,image_position = ?,image_group = ?,update_by = ?,ver = ?,is_del = ?,ver = ver + 1 where id = ? 
+2019-01-03 14:30:26,100:DEBUG qtp1397643446-29 (BaseJdbcLogger.java:159) - ==> Parameters: 图片名称更新(String), 9(String), 42(String), 32(Long), /user/desktop(String), 23(Long), SYS(String), 1(Integer), 1(Integer), 9(Long)
+2019-01-03 14:30:26,124:DEBUG qtp1397643446-29 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 15:50:32,832:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark) values (?,?,?,?) 
+2019-01-03 15:50:32,874:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - ==> Parameters: 第三个算法(String), 第三个算法(String), third algorithm(String), 吊炸天(String)
+2019-01-03 15:50:32,902:DEBUG qtp1397643446-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 19:03:26,081:DEBUG qtp1252138909-26 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark) values (?,?,?,?) 
+2019-01-03 19:03:26,120:DEBUG qtp1252138909-26 (BaseJdbcLogger.java:159) - ==> Parameters: 第三个算法(String), 第三个算法(String), third algorithm(String), 吊炸天(String)
+2019-01-03 19:03:26,146:DEBUG qtp1252138909-26 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 22:26:45,628:DEBUG qtp28612052-28 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark) values (?,?,?,?) 
+2019-01-03 22:26:45,679:DEBUG qtp28612052-28 (BaseJdbcLogger.java:159) - ==> Parameters: 第三个算法(String), 第三个算法(String), third algorithm(String), 吊炸天(String)
+2019-01-03 22:26:45,943:DEBUG qtp28612052-28 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 22:40:08,377:DEBUG qtp1579015748-30 (BaseJdbcLogger.java:159) - ==>  Preparing: insert into algorithm(name,name_cn,name_en,remark,arguments) values (?,?,?,?,?) 
+2019-01-03 22:40:08,421:DEBUG qtp1579015748-30 (BaseJdbcLogger.java:159) - ==> Parameters: 第三个算法(String), 第三个算法(String), third algorithm(String), 吊炸天(String), {"a":1,"b":2}(String)
+2019-01-03 22:40:08,769:DEBUG qtp1579015748-30 (BaseJdbcLogger.java:159) - <==    Updates: 1
+2019-01-03 22:40:57,363:DEBUG qtp1579015748-26 (BaseJdbcLogger.java:159) - ==>  Preparing: select id, code, name, name_cn, name_en, remark,arguments, create_by, update_time, update_by, ver, is_del from algorithm where id = ? and 1 = 1 
+2019-01-03 22:40:57,365:DEBUG qtp1579015748-26 (BaseJdbcLogger.java:159) - ==> Parameters: 15(Long)
+2019-01-03 22:40:57,432:DEBUG qtp1579015748-26 (BaseJdbcLogger.java:159) - <==      Total: 1
