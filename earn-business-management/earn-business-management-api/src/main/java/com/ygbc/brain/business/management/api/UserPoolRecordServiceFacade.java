@@ -17,4 +17,6 @@ public interface UserPoolRecordServiceFacade {
     Resp delete(Req<DeleteUserPoolRecordReqDTO> req);
 
     Resp update(Req<UpdateUserPoolRecordReqDTO> req);
+
+    Resp submit(Req<SubmitRecordResultReqDTO> req);
 }

@@ -24,14 +24,16 @@
     <result column="invitor_user_id" jdbcType="BIGINT" property="invitorUserId" />
     <result column="is_robot" jdbcType="BIT" property="isRobot" />
     <result column="integration" jdbcType="INTEGER" property="integration" />
-    <result column="last_withdraw" jdbcType="DATE" property="lastWithdraw" />
+    <result column="last_withdraw" jdbcType="TIMESTAMP" property="lastWithdraw" />
     <result column="can_withdraw" jdbcType="BIT" property="canWithdraw" />
     <result column="withdraw" jdbcType="DECIMAL" property="withdraw" />
     <result column="gain" jdbcType="INTEGER" property="gain" />
     <result column="last_week_gain" jdbcType="INTEGER" property="lastWeekGain" />
     <result column="charge" jdbcType="DECIMAL" property="charge" />
-    <result column="last_login_time" jdbcType="DATE" property="lastLoginTime" />
+    <result column="last_login_time" jdbcType="TIMESTAMP" property="lastLoginTime" />
     <result column="rank" jdbcType="INTEGER" property="rank"/>
+    <result column="challenge_num" jdbcType="INTEGER" property="challengeNum"/>
+    <result column="success_num" jdbcType="INTEGER" property="successNum"/>
     <result column="status" jdbcType="VARCHAR" property="status" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="create_by" jdbcType="VARCHAR" property="createBy" />
@@ -44,7 +46,7 @@
     id, user_id, password, nick_name, telphone, wechat, qq, email, sign_saying, head_sculpture_image_url,
     plan_rate, current_rate, good_at, interest_in, can_invite, invite_code, invite_friend_num_limit,
     invited_friend_num, is_invited, invitor_user_id, is_robot, integration, last_withdraw,
-    can_withdraw, withdraw, gain, last_week_gain, charge, last_login_time, rank, status, create_time,
+    can_withdraw, withdraw, gain, last_week_gain, charge, last_login_time, rank, challenge_num, success_num, status, create_time,
     create_by, update_time, update_by, ver, is_del
   </sql>
 

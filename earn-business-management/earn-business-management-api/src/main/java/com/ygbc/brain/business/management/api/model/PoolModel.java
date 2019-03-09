@@ -6,99 +6,125 @@ import java.util.Date;
 
 public class PoolModel extends BaseModel {
     /**
-    * 奖池编号
-    */
+     * 奖池编号(期数)
+     */
     private Long poolId;
 
-    /** 
-    * 初始奖励积分
-    */
+    /**
+     * 初始奖励积分
+     */
     private Integer initIntegration;
 
-    /** 
-    * 初始参与挑战积分
-    */
+    /**
+     * 初始参与挑战积分
+     */
     private Integer initParticipateIntegration;
 
-    /** 
-    * 奖池累积上线
-    */
+    /**
+     * 奖池累积上线
+     */
     private Integer integrationMax;
 
-    /** 
-    * 奖池累积下限
-    */
+    /**
+     * 奖池累积下限
+     */
     private Integer integrationMin;
 
-    /** 
-    * 计划成功率
-    */
-    private Integer planRate;
+    /**
+     * 计划成功率
+     */
+    private Integer planParticipationRate;
 
-    /** 
-    * 当前成功率
-    */
-    private Integer currentRate;
+    /**
+     * 计划成功率
+     */
+    private Integer planParticipantRate;
 
-    /** 
-    * 当前累积积分
-    */
+    /**
+     * 当前累积积分
+     */
     private Integer currentIntegration;
 
-    /** 
-    * 当前挑战所需积分
-    */
+    /**
+     * 当前挑战所需积分
+     */
     private Integer currentParticipateIntegration;
 
-    /** 
-    * 参与人数
-    */
+    /**
+     * 当前参与成功率
+     */
+    private Integer currentParticipationRate;
+
+    /**
+     * 当前参与者成功率
+     */
+    private Integer currentParticipantRate;
+
+    /**
+     * 参与人数
+     */
     private Integer participantNum;
 
-    /** 
-    * 参与次数
-    */
+    /**
+     * 参与次数
+     */
     private Integer participationTimes;
 
-    /** 
-    * 成功人数
-    */
+    /**
+     * 成功人数
+     */
     private Integer winnerNum;
 
-    /** 
-    * 持续时长
-    */
-    private Integer period;
+    /**
+     * 成功次数
+     */
+    private Integer successTimes;
 
-    /** 
-    * 结束时间
-    */
-    private Date endTime;
+    /**
+     * 计划持续时长（秒）
+     */
+    private Integer planPeriod;
 
-    /** 
-    * 奖励积分
-    */
+    /**
+     * 计划结束时间
+     */
+    private Date planEndTime;
+
+    /**
+     * 实际持续时长（秒）
+     */
+    private Integer actuallyPeriod;
+
+    /**
+     * 实际结束时间
+     */
+    private Date actuallyEndTime;
+
+    /**
+     * 奖励积分
+     */
     private Integer awardIntegration;
 
-    /** 
-    * 利润
-    */
+    /**
+     * 利润
+     */
     private Integer profitIntegration;
 
-    /** 
-    * 是否盈利
-    */
+    /**
+     * 是否盈利
+     */
     private Boolean isEarn;
 
-    /** 
-    * 是否需要干预
-    */
+    /**
+     * 是否需要干预
+     */
     private Boolean needMeddle;
 
-    /** 
-    * 状态 C:新建;O:进行中;L:锁定;D:完成
-    */
+    /**
+     * 状态 C:新建;O:进行中;L:锁定;D:完成
+     */
     private String status;
+
 
     public Long getPoolId() {
         return poolId;
@@ -140,20 +166,20 @@ public class PoolModel extends BaseModel {
         this.integrationMin = integrationMin;
     }
 
-    public Integer getPlanRate() {
-        return planRate;
+    public Integer getPlanParticipationRate() {
+        return planParticipationRate;
     }
 
-    public void setPlanRate(Integer planRate) {
-        this.planRate = planRate;
+    public void setPlanParticipationRate(Integer planParticipationRate) {
+        this.planParticipationRate = planParticipationRate;
     }
 
-    public Integer getCurrentRate() {
-        return currentRate;
+    public Integer getPlanParticipantRate() {
+        return planParticipantRate;
     }
 
-    public void setCurrentRate(Integer currentRate) {
-        this.currentRate = currentRate;
+    public void setPlanParticipantRate(Integer planParticipantRate) {
+        this.planParticipantRate = planParticipantRate;
     }
 
     public Integer getCurrentIntegration() {
@@ -170,6 +196,22 @@ public class PoolModel extends BaseModel {
 
     public void setCurrentParticipateIntegration(Integer currentParticipateIntegration) {
         this.currentParticipateIntegration = currentParticipateIntegration;
+    }
+
+    public Integer getCurrentParticipationRate() {
+        return currentParticipationRate;
+    }
+
+    public void setCurrentParticipationRate(Integer currentParticipationRate) {
+        this.currentParticipationRate = currentParticipationRate;
+    }
+
+    public Integer getCurrentParticipantRate() {
+        return currentParticipantRate;
+    }
+
+    public void setCurrentParticipantRate(Integer currentParticipantRate) {
+        this.currentParticipantRate = currentParticipantRate;
     }
 
     public Integer getParticipantNum() {
@@ -196,20 +238,44 @@ public class PoolModel extends BaseModel {
         this.winnerNum = winnerNum;
     }
 
-    public Integer getPeriod() {
-        return period;
+    public Integer getSuccessTimes() {
+        return successTimes;
     }
 
-    public void setPeriod(Integer period) {
-        this.period = period;
+    public void setSuccessTimes(Integer successTimes) {
+        this.successTimes = successTimes;
     }
 
-    public Date getEndTime() {
-        return endTime;
+    public Integer getPlanPeriod() {
+        return planPeriod;
     }
 
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+    public void setPlanPeriod(Integer planPeriod) {
+        this.planPeriod = planPeriod;
+    }
+
+    public Date getPlanEndTime() {
+        return planEndTime;
+    }
+
+    public void setPlanEndTime(Date planEndTime) {
+        this.planEndTime = planEndTime;
+    }
+
+    public Integer getActuallyPeriod() {
+        return actuallyPeriod;
+    }
+
+    public void setActuallyPeriod(Integer actuallyPeriod) {
+        this.actuallyPeriod = actuallyPeriod;
+    }
+
+    public Date getActuallyEndTime() {
+        return actuallyEndTime;
+    }
+
+    public void setActuallyEndTime(Date actuallyEndTime) {
+        this.actuallyEndTime = actuallyEndTime;
     }
 
     public Integer getAwardIntegration() {
@@ -249,7 +315,7 @@ public class PoolModel extends BaseModel {
     }
 
     public void setStatus(String status) {
-        this.status = status == null ? null : status.trim();
+        this.status = status;
     }
 
 }

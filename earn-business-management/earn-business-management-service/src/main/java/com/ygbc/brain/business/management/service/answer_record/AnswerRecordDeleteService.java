@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.answer_record.DeleteAnswerRecordReqDTO;
 import com.ygbc.brain.business.management.api.model.AnswerRecordModel;
 import com.ygbc.brain.business.common.dal.data.AnswerRecordData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class AnswerRecordDeleteService extends BaseExecutableService<Req<DeleteA
         if(answerRecordData == null){
             return Resp.build(AnswerRecordModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            answerRecordData.setIsDel(YesNo.YES.getValue());
+            answerRecordData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(answerRecordData);
             return Resp.build();
         }

@@ -31,6 +31,11 @@ public class ParticipantPoolChartModel {
     */
     private Integer participateTimes;
 
+    /**
+     * 成功次数
+     */
+    private Integer successTimes;
+
     /** 
     * 收益
     */
@@ -92,6 +97,14 @@ public class ParticipantPoolChartModel {
 
     public void setParticipateTimes(Integer participateTimes) {
         this.participateTimes = participateTimes;
+    }
+
+    public Integer getSuccessTimes() {
+        return successTimes;
+    }
+
+    public void setSuccessTimes(Integer successTimes) {
+        this.successTimes = successTimes;
     }
 
     public Integer getEarnings() {

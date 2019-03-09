@@ -29,6 +29,11 @@ public class UpdateUserPoolRecordReqDTO extends BaseDTO {
     private Integer rightNum;
 
     /**
+     * 消费积分
+     */
+    private Integer consumeIntegration;
+
+    /**
      * 挑战结果 0：挑战失败；1：挑战成功
      */
     private Boolean result;
@@ -76,6 +81,14 @@ public class UpdateUserPoolRecordReqDTO extends BaseDTO {
 
     public void setRightNum(Integer rightNum) {
         this.rightNum = rightNum;
+    }
+
+    public Integer getConsumeIntegration() {
+        return consumeIntegration;
+    }
+
+    public void setConsumeIntegration(Integer consumeIntegration) {
+        this.consumeIntegration = consumeIntegration;
     }
 
     public Boolean getResult() {

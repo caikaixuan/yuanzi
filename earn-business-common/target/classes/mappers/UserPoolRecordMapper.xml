@@ -7,6 +7,7 @@
     <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="pool_id" jdbcType="BIGINT" property="poolId" />
     <result column="user_nick_name" jdbcType="VARCHAR" property="userNickName" />
+    <result column="consume_integration" jdbcType="VARCHAR" property="consumeIntegration" />
     <result column="right_num" jdbcType="INTEGER" property="rightNum" />
     <result column="result" jdbcType="BIT" property="result" />
     <result column="status" jdbcType="VARCHAR" property="status" />
@@ -18,7 +19,7 @@
     <result column="is_del" jdbcType="BIT" property="isDel" />
   </resultMap>
   <sql id="Base_Column_List">
-    id, user_pool_record_id, user_id, pool_id, user_nick_name, right_num, result, status,
+    id, user_pool_record_id, user_id, pool_id, user_nick_name, consume_integration, right_num, result, status,
     create_time, create_by, update_time, update_by, ver, is_del
   </sql>
 
@@ -38,6 +39,9 @@
       </if>
       <if test="rightNum != null">
         right_num = #{rightNum,jdbcType=INTEGER}
+      </if>
+      <if test="consumeIntegration != null">
+        consume_integration = #{consumeIntegration,jdbcType=VARCHAR}
       </if>
       <if test="result != null">
         result = #{result,jdbcType=BIT}

@@ -28,4 +28,13 @@ public class Constants {
 
     public final static String BUSINESS_ERROR_CODE = "9100";
     public final static String BUSINESS_ERROR_MSG = "业务异常";
+
+    public final static String POOL_STATUS_VALIDATE_CODE = "9200";
+    public final static String POOL_STATUS_VALIDATE_DESC ="奖池被锁定或已结算，无法参与";
+
+    public static final int CHALLENGE_SIZE = 10;
+    public static final int CHALLENGE_PAGE_NUMBER = 1;
+
+
+
 }

@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.question.DeleteQuestionReqDTO;
 import com.ygbc.brain.business.management.api.model.QuestionModel;
 import com.ygbc.brain.business.common.dal.data.QuestionData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class QuestionDeleteService extends BaseExecutableService<Req<DeleteQuest
         if(questionData == null){
             return Resp.build(QuestionModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            questionData.setIsDel(YesNo.YES.getValue());
+            questionData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(questionData);
             return Resp.build();
         }

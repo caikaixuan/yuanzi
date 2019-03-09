@@ -1,6 +1,10 @@
 package com.ygbc.brain.business.management.api.dto.user_pool_record;
 
 import com.ygbc.brain.base.dto.BaseDTO;
+import com.ygbc.brain.business.management.api.dto.answer_record.CreateAnswerRecordReqDTO;
+import com.ygbc.brain.business.management.api.model.PoolModel;
+
+import java.util.List;
 
 public class CreateUserPoolRecordReqDTO extends BaseDTO {
     /**
@@ -24,14 +28,20 @@ public class CreateUserPoolRecordReqDTO extends BaseDTO {
     private Integer rightNum;
 
     /**
+     * 消费积分
+     */
+    private Integer consumeIntegration;
+
+    /**
      * 挑战结果 0：挑战失败；1：挑战成功
      */
     private Boolean result;
 
     /**
-     * 记录状态
+     * 回答的问题列表
      */
-    private String status;
+    private List<CreateAnswerRecordReqDTO> answerRecords;
+
 
     public Long getUserId() {
         return userId;
@@ -65,6 +75,14 @@ public class CreateUserPoolRecordReqDTO extends BaseDTO {
         this.rightNum = rightNum;
     }
 
+    public Integer getConsumeIntegration() {
+        return consumeIntegration;
+    }
+
+    public void setConsumeIntegration(Integer consumeIntegration) {
+        this.consumeIntegration = consumeIntegration;
+    }
+
     public Boolean getResult() {
         return result;
     }
@@ -73,11 +91,11 @@ public class CreateUserPoolRecordReqDTO extends BaseDTO {
         this.result = result;
     }
 
-    public String getStatus() {
-        return status;
+    public List<CreateAnswerRecordReqDTO> getAnswerRecords() {
+        return answerRecords;
     }
 
-    public void setStatus(String status) {
-        this.status = status == null ? null : status.trim();
+    public void setAnswerRecords(List<CreateAnswerRecordReqDTO> answerRecords) {
+        this.answerRecords = answerRecords;
     }
 }

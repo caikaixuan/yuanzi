@@ -67,4 +67,14 @@ public class UserPoolRecordServiceFacadeImpl implements UserPoolRecordServiceFac
             return exceptionHandler.handleException(e);
         }
     }
+
+    @Override
+    public Resp submit(Req<SubmitRecordResultReqDTO> req) {
+        SubmitRecordResultService service = SpringUtils.getBean(SubmitRecordResultService.class);
+        try {
+            return service.execute(req);
+        } catch (Exception e) {
+            return exceptionHandler.handleException(e);
+        }
+    }
 }

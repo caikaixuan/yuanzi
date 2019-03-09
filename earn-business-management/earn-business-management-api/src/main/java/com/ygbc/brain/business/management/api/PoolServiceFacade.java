@@ -12,9 +12,15 @@ public interface PoolServiceFacade {
 
     Resp<PoolModel> detail(Req<QueryPoolDetailReqDTO> req);
 
-    Resp create(Req<CreatePoolReqDTO> req);
+    Resp<PoolModel> create(Req<CreatePoolReqDTO> req);
 
     Resp delete(Req<DeletePoolReqDTO> req);
 
     Resp update(Req<UpdatePoolReqDTO> req);
+
+    Resp<PoolModel> getCurrentPool(Req<GetCurrentPoolReqDTO> req);
+
+    Resp<List<PoolModel>> getCurrentPools(Req<GetCurrentPoolsReqDTO> req);
+
+    Resp runLotteryInAdvance(Req<RunLotteryInAdvanceReqDTO> req);
 }

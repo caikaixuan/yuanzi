@@ -40,7 +40,7 @@ public class BaseData implements Serializable {
     /**
      * 逻辑删除标志
      */
-    private Integer isDel;
+    private Boolean isDel;
 
     public static long getSerialVersionUID() {
         return serialVersionUID;
@@ -94,11 +94,11 @@ public class BaseData implements Serializable {
         this.ver = ver;
     }
 
-    public Integer getIsDel() {
+    public Boolean getIsDel() {
         return isDel;
     }
 
-    public void setIsDel(Integer isDel) {
+    public void setIsDel(Boolean isDel) {
         this.isDel = isDel;
     }
 }

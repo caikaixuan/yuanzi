@@ -28,6 +28,11 @@ public class AnswerRecordModel extends BaseModel {
     */
     private Long questionId;
 
+    /**
+     * 回答者答案
+     */
+    private String answer;
+
     /** 
     * 参与次数
     */
@@ -71,6 +76,14 @@ public class AnswerRecordModel extends BaseModel {
 
     public void setQuestionId(Long questionId) {
         this.questionId = questionId;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public Boolean getResult() {

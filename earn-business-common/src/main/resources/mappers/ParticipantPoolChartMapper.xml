@@ -9,6 +9,7 @@
     <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="user_nick_name" jdbcType="VARCHAR" property="userNickName" />
     <result column="participate_times" jdbcType="INTEGER" property="participateTimes" />
+    <result column="success_times" jdbcType="INTEGER" property="successTimes" />
     <result column="earnings" jdbcType="INTEGER" property="earnings" />
     <result column="position" jdbcType="INTEGER" property="position" />
     <result column="status" jdbcType="VARCHAR" property="status" />
@@ -21,7 +22,7 @@
   </resultMap>
   <sql id="Base_Column_List">
     id, participant_pool_chart_id, user_pool_record_id, pool_id, user_id, user_nick_name,
-    participate_times, earnings, position, status, create_time, create_by, update_time,
+    participate_times, success_times, earnings, position, status, create_time, create_by, update_time,
     update_by, ver, is_del
   </sql>
 
@@ -44,6 +45,9 @@
       </if>
       <if test="participateTimes != null">
         participate_times >= #{participateTimes,jdbcType=INTEGER}
+      </if>
+      <if test="successTimes != null">
+        success_times >= #{successTimes,jdbcType=INTEGER}
       </if>
       <if test="earnings != null">
         earnings >= #{earnings,jdbcType=INTEGER}

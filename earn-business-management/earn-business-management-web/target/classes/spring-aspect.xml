@@ -14,6 +14,8 @@
     <bean id="loginTokenValidAspectBean" class="com.ygbc.brain.common.aspect.LoginTokenValidateAspect">
         <property name="redisSessionManager" ref="redisSessionManager"/>
     </bean>
+    <!--清空entity_attrs类-->
+    <bean id="entityAttrsClearAspectBean" class="com.ygbc.brain.common.aspect.EntityAttrsClearAspect"/>
 
     <!-- 第1步： AOP的配置 -->
     <aop:config>
@@ -47,6 +49,12 @@
             <aop:pointcut id="fieldValidMethod"
                           expression="execution(* com.ygbc.brain.business.management.service.*.*(..))"/>
             <aop:around method="around" pointcut-ref="fieldValidMethod" arg-names="pjp"/>
+        </aop:aspect>
+
+        <aop:aspect id="entityAttrsClearAspect" ref="entityAttrsClearAspectBean">
+            <aop:pointcut id="entityAttrsClearMethod"
+                          expression="execution(* com.ygbc.brain.business.common.listener.*.*(..))"/>
+            <aop:after-returning method="afterReturn" pointcut-ref="entityAttrsClearMethod" arg-names="call"/>
         </aop:aspect>
 
         <!--<aop:aspect id="loginTokenValidAspect" ref="loginTokenValidAspectBean">-->

@@ -8,7 +8,7 @@ import java.util.Date;
 
 public class UpdatePoolReqDTO extends BaseDTO {
     /**
-     * 奖池编号
+     * 奖池编号(期数)
      */
     private Long poolId;
 
@@ -68,14 +68,29 @@ public class UpdatePoolReqDTO extends BaseDTO {
     private Integer winnerNum;
 
     /**
-     * 持续时长
+     * 成功次数
      */
-    private Integer period;
+    private Integer successTimes;
 
     /**
-     * 结束时间
+     * 计划持续时长（秒）
      */
-    private Date endTime;
+    private Integer planPeriod;
+
+    /**
+     * 计划结束时间
+     */
+    private Date planEndTime;
+
+    /**
+     * 实际持续时长（秒）
+     */
+    private Integer actuallyPeriod;
+
+    /**
+     * 实际结束时间
+     */
+    private Date actuallyEndTime;
 
     /**
      * 奖励积分
@@ -198,20 +213,44 @@ public class UpdatePoolReqDTO extends BaseDTO {
         this.winnerNum = winnerNum;
     }
 
-    public Integer getPeriod() {
-        return period;
+    public Integer getSuccessTimes() {
+        return successTimes;
     }
 
-    public void setPeriod(Integer period) {
-        this.period = period;
+    public void setSuccessTimes(Integer successTimes) {
+        this.successTimes = successTimes;
     }
 
-    public Date getEndTime() {
-        return endTime;
+    public Integer getPlanPeriod() {
+        return planPeriod;
     }
 
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+    public void setPlanPeriod(Integer planPeriod) {
+        this.planPeriod = planPeriod;
+    }
+
+    public Date getPlanEndTime() {
+        return planEndTime;
+    }
+
+    public void setPlanEndTime(Date planEndTime) {
+        this.planEndTime = planEndTime;
+    }
+
+    public Integer getActuallyPeriod() {
+        return actuallyPeriod;
+    }
+
+    public void setActuallyPeriod(Integer actuallyPeriod) {
+        this.actuallyPeriod = actuallyPeriod;
+    }
+
+    public Date getActuallyEndTime() {
+        return actuallyEndTime;
+    }
+
+    public void setActuallyEndTime(Date actuallyEndTime) {
+        this.actuallyEndTime = actuallyEndTime;
     }
 
     public Integer getAwardIntegration() {
@@ -230,12 +269,12 @@ public class UpdatePoolReqDTO extends BaseDTO {
         this.profitIntegration = profitIntegration;
     }
 
-    public Boolean getEarn() {
+    public Boolean getIsEarn() {
         return isEarn;
     }
 
-    public void setEarn(Boolean earn) {
-        isEarn = earn;
+    public void setIsEarn(Boolean isEarn) {
+        this.isEarn = isEarn;
     }
 
     public Boolean getNeedMeddle() {

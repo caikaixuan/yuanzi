@@ -26,8 +26,13 @@ public class AnswerRecordData extends BaseData {
     */
     private Long questionId;
 
+    /**
+     * 回答者答案
+     */
+    private String answer;
+
     /** 
-    * 参与次数
+    * 回答结果
     */
     private Boolean result;
 
@@ -69,6 +74,14 @@ public class AnswerRecordData extends BaseData {
 
     public void setQuestionId(Long questionId) {
         this.questionId = questionId;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public Boolean getResult() {

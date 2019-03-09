@@ -21,12 +21,17 @@ public class UserPoolRecordData extends BaseData {
     */
     private String userNickName;
 
+    /**
+     * 花费积分
+     */
+    private Integer consumeIntegration;
+
     /** 
     * 答对题数
     */
     private Integer rightNum;
 
-    /** 
+    /**
     * 挑战结果 0：挑战失败；1：挑战成功
     */
     private Boolean result;
@@ -66,6 +71,14 @@ public class UserPoolRecordData extends BaseData {
 
     public void setUserNickName(String userNickName) {
         this.userNickName = userNickName == null ? null : userNickName.trim();
+    }
+
+    public Integer getConsumeIntegration() {
+        return consumeIntegration;
+    }
+
+    public void setConsumeIntegration(Integer consumeIntegration) {
+        this.consumeIntegration = consumeIntegration;
     }
 
     public Integer getRightNum() {

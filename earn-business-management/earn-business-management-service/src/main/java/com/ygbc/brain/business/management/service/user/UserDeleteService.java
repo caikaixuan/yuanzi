@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.user.DeleteUserReqDTO;
 import com.ygbc.brain.business.management.api.model.UserModel;
 import com.ygbc.brain.business.common.dal.data.UserData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class UserDeleteService extends BaseExecutableService<Req<DeleteUserReqDT
         if(userData == null){
             return Resp.build(UserModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            userData.setIsDel(YesNo.YES.getValue());
+            userData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(userData);
             return Resp.build();
         }

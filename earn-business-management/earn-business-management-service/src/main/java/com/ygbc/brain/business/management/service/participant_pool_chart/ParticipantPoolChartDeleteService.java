@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.participant_pool_chart.DeleteParticipantPoolChartReqDTO;
 import com.ygbc.brain.business.management.api.model.ParticipantPoolChartModel;
 import com.ygbc.brain.business.common.dal.data.ParticipantPoolChartData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class ParticipantPoolChartDeleteService extends BaseExecutableService<Req
         if(participantPoolChartData == null){
             return Resp.build(ParticipantPoolChartModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            participantPoolChartData.setIsDel(YesNo.YES.getValue());
+            participantPoolChartData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(participantPoolChartData);
             return Resp.build();
         }

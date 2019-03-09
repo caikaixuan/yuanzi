@@ -7,13 +7,16 @@
     <result column="withdraw_exchange_rate" jdbcType="INTEGER" property="withdrawExchangeRate" />
     <result column="pool_init_integration" jdbcType="INTEGER" property="poolInitIntegration" />
     <result column="pool_init_participate_integration" jdbcType="INTEGER" property="poolInitParticipateIntegration" />
-    <result column="pool_plan_rate" jdbcType="INTEGER" property="poolPlanRate" />
+    <result column="pool_plan_participation_rate" jdbcType="INTEGER" property="poolPlanParticipationRate" />
+    <result column="pool_plan_participant_rate" jdbcType="INTEGER" property="poolPlanParticipantRate" />
     <result column="pool_integration_max" jdbcType="INTEGER" property="poolIntegrationMax" />
     <result column="pool_integration_min" jdbcType="INTEGER" property="poolIntegrationMin" />
     <result column="pool_need_meddle" jdbcType="BIT" property="poolNeedMeddle" />
+    <result column="pool_plan_period" jdbcType="INTEGER" property="poolPlanPeriod" />
     <result column="user_plan_rate" jdbcType="INTEGER" property="userPlanRate" />
     <result column="user_can_invite" jdbcType="BIT" property="userCanInvite" />
     <result column="user_num_limit" jdbcType="INTEGER" property="userNumLimit" />
+    <result column="success_line" jdbcType="INTEGER" property="successLine" />
     <result column="invite_friend_num_limit" jdbcType="INTEGER" property="inviteFriendNumLimit" />
     <result column="app_version" jdbcType="INTEGER" property="appVersion" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
@@ -25,8 +28,9 @@
   </resultMap>
   <sql id="Base_Column_List">
     id, charge_exchange_rate, withdraw_exchange_rate, pool_init_integration, pool_init_participate_integration,
-    pool_plan_rate, pool_integration_max, pool_integration_min, pool_need_meddle, user_plan_rate,
-    user_can_invite, user_num_limit, invite_friend_num_limit, app_version, create_time,
+    pool_plan_participation_rate, pool_plan_participant_rate, pool_integration_max, pool_integration_min,
+    pool_need_meddle, pool_plan_period,
+    user_plan_rate, user_can_invite, user_num_limit, success_line, invite_friend_num_limit, app_version, create_time,
     create_by, update_time, update_by, ver, is_del
   </sql>
 
@@ -56,6 +60,9 @@
       <if test="poolNeedMeddle != null">
         pool_need_meddle = #{poolNeedMeddle,jdbcType=BIT}
       </if>
+      <if test="poolPlanPeriod != null">
+        pool_plan_period = #{poolPlanPeriod,jdbcType=INTEGER}
+      </if>
       <if test="userPlanRate != null">
         user_plan_rate = #{userPlanRate,jdbcType=INTEGER}
       </if>
@@ -64,6 +71,9 @@
       </if>
       <if test="userNumLimit != null">
         user_num_limit = #{userNumLimit,jdbcType=INTEGER}
+      </if>
+      <if test="successLine != null">
+        success_line = #{successLine,jdbcType=INTEGER}
       </if>
       <if test="inviteFriendNumLimit != null">
         invite_friend_num_limit = #{inviteFriendNumLimit,jdbcType=INTEGER}
@@ -119,6 +129,13 @@
     <include refid="Base_Column_List"/>
     from sys_parameter
     <include refid="SQL_FILTER"/>
+  </select>
+
+  <select id="selectOnlyOne" resultMap="BaseResultMap" parameterType="int">
+    select
+    <include refid="Base_Column_List"/>
+    from sys_parameter
+    where ver = 6
   </select>
 
   <insert id="insert" parameterType="com.ygbc.brain.business.common.dal.data.SysParameterData"

@@ -31,14 +31,14 @@ public class PoolData extends BaseData {
     /** 
     * 计划成功率
     */
-    private Integer planRate;
+    private Integer planParticipationRate;
 
-    /** 
-    * 当前成功率
-    */
-    private Integer currentRate;
+    /**
+     * 计划成功率
+     */
+    private Integer planParticipantRate;
 
-    /** 
+    /**
     * 当前累积积分
     */
     private Integer currentIntegration;
@@ -47,6 +47,16 @@ public class PoolData extends BaseData {
     * 当前挑战所需积分
     */
     private Integer currentParticipateIntegration;
+
+    /**
+     * 当前参与成功率
+     */
+    private Integer currentParticipationRate;
+
+    /**
+     * 当前参与者成功率
+     */
+    private Integer currentParticipantRate;
 
     /** 
     * 参与人数
@@ -63,15 +73,30 @@ public class PoolData extends BaseData {
     */
     private Integer winnerNum;
 
-    /** 
-    * 持续时长
-    */
-    private Integer period;
+    /**
+     * 成功次数
+     */
+    private Integer successTimes;
 
     /** 
-    * 结束时间
+    * 计划持续时长（秒）
     */
-    private Date endTime;
+    private Integer planPeriod;
+
+    /** 
+    * 计划结束时间
+    */
+    private Date planEndTime;
+
+    /**
+     * 实际持续时长（秒）
+     */
+    private Integer actuallyPeriod;
+
+    /**
+     * 实际结束时间
+     */
+    private Date actuallyEndTime;
 
     /** 
     * 奖励积分
@@ -97,6 +122,7 @@ public class PoolData extends BaseData {
     * 状态 C:新建;O:进行中;L:锁定;D:完成
     */
     private String status;
+
 
     public Long getPoolId() {
         return poolId;
@@ -138,20 +164,20 @@ public class PoolData extends BaseData {
         this.integrationMin = integrationMin;
     }
 
-    public Integer getPlanRate() {
-        return planRate;
+    public Integer getPlanParticipationRate() {
+        return planParticipationRate;
     }
 
-    public void setPlanRate(Integer planRate) {
-        this.planRate = planRate;
+    public void setPlanParticipationRate(Integer planParticipationRate) {
+        this.planParticipationRate = planParticipationRate;
     }
 
-    public Integer getCurrentRate() {
-        return currentRate;
+    public Integer getPlanParticipantRate() {
+        return planParticipantRate;
     }
 
-    public void setCurrentRate(Integer currentRate) {
-        this.currentRate = currentRate;
+    public void setPlanParticipantRate(Integer planParticipantRate) {
+        this.planParticipantRate = planParticipantRate;
     }
 
     public Integer getCurrentIntegration() {
@@ -168,6 +194,22 @@ public class PoolData extends BaseData {
 
     public void setCurrentParticipateIntegration(Integer currentParticipateIntegration) {
         this.currentParticipateIntegration = currentParticipateIntegration;
+    }
+
+    public Integer getCurrentParticipationRate() {
+        return currentParticipationRate;
+    }
+
+    public void setCurrentParticipationRate(Integer currentParticipationRate) {
+        this.currentParticipationRate = currentParticipationRate;
+    }
+
+    public Integer getCurrentParticipantRate() {
+        return currentParticipantRate;
+    }
+
+    public void setCurrentParticipantRate(Integer currentParticipantRate) {
+        this.currentParticipantRate = currentParticipantRate;
     }
 
     public Integer getParticipantNum() {
@@ -194,20 +236,44 @@ public class PoolData extends BaseData {
         this.winnerNum = winnerNum;
     }
 
-    public Integer getPeriod() {
-        return period;
+    public Integer getSuccessTimes() {
+        return successTimes;
     }
 
-    public void setPeriod(Integer period) {
-        this.period = period;
+    public void setSuccessTimes(Integer successTimes) {
+        this.successTimes = successTimes;
     }
 
-    public Date getEndTime() {
-        return endTime;
+    public Integer getPlanPeriod() {
+        return planPeriod;
     }
 
-    public void setEndTime(Date endTime) {
-        this.endTime = endTime;
+    public void setPlanPeriod(Integer planPeriod) {
+        this.planPeriod = planPeriod;
+    }
+
+    public Date getPlanEndTime() {
+        return planEndTime;
+    }
+
+    public void setPlanEndTime(Date planEndTime) {
+        this.planEndTime = planEndTime;
+    }
+
+    public Integer getActuallyPeriod() {
+        return actuallyPeriod;
+    }
+
+    public void setActuallyPeriod(Integer actuallyPeriod) {
+        this.actuallyPeriod = actuallyPeriod;
+    }
+
+    public Date getActuallyEndTime() {
+        return actuallyEndTime;
+    }
+
+    public void setActuallyEndTime(Date actuallyEndTime) {
+        this.actuallyEndTime = actuallyEndTime;
     }
 
     public Integer getAwardIntegration() {
@@ -247,7 +313,6 @@ public class PoolData extends BaseData {
     }
 
     public void setStatus(String status) {
-        this.status = status == null ? null : status.trim();
+        this.status = status;
     }
-
 }

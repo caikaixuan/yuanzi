@@ -75,6 +75,23 @@
     </where>
   </sql>
 
+  <sql id="SQL_ORDER_BY">
+    <if test="sortField != null and sortType != null">
+      <if test="sortField == 0">
+        ORDER BY create_time
+      </if>
+      <if test="sortField == 1">
+        ORDER BY difficulty
+      </if>
+      <if test="sortType == 0">
+        ASC
+      </if>
+      <if test="sortType == 1">
+        DESC
+      </if>
+    </if>
+  </sql>
+
   <select id="selectById" resultMap="BaseResultMap" parameterType="java.lang.Long">
     select
     <include refid="Base_Column_List"/>

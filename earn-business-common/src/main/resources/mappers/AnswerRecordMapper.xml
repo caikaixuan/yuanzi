@@ -8,6 +8,7 @@
     <result column="pool_id" jdbcType="BIGINT" property="poolId" />
     <result column="user_id" jdbcType="BIGINT" property="userId" />
     <result column="question_id" jdbcType="BIGINT" property="questionId" />
+    <result column="answer" jdbcType="VARCHAR" property="answer" />
     <result column="result" jdbcType="BIT" property="result" />
     <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
     <result column="create_by" jdbcType="VARCHAR" property="createBy" />
@@ -37,6 +38,9 @@
       </if>
       <if test="questionId != null">
         question_id = #{questionId,jdbcType=BIGINT},
+      </if>
+      <if test="answer != null">
+        answer = #{answer,jdbcType=VARCHAR}
       </if>
       <if test="result != null">
         result = #{result,jdbcType=BIT}

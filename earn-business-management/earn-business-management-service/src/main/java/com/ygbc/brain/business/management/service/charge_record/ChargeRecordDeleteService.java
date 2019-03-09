@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.charge_record.DeleteChargeRecordReqDTO;
 import com.ygbc.brain.business.management.api.model.ChargeRecordModel;
 import com.ygbc.brain.business.common.dal.data.ChargeRecordData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class ChargeRecordDeleteService extends BaseExecutableService<Req<DeleteC
         if(chargeRecordData == null){
             return Resp.build(ChargeRecordModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            chargeRecordData.setIsDel(YesNo.YES.getValue());
+            chargeRecordData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(chargeRecordData);
             return Resp.build();
         }

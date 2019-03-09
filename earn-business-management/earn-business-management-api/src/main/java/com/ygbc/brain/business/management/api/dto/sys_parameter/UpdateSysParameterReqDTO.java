@@ -3,11 +3,8 @@ package com.ygbc.brain.business.management.api.dto.sys_parameter;
 import com.ygbc.brain.base.dto.BaseDTO;
 
 public class UpdateSysParameterReqDTO extends BaseDTO {
-    /**
-     * 编号
-     */
-    private Long id;
 
+    private Long id;
     /**
      * 充值汇率
      */
@@ -29,9 +26,14 @@ public class UpdateSysParameterReqDTO extends BaseDTO {
     private Integer poolInitParticipateIntegration;
 
     /**
-     * 奖池计划挑战成功率
+     * 奖池计划参与成功率
      */
-    private Integer poolPlanRate;
+    private Integer poolPlanParticipationRate;
+
+    /**
+     * 奖池计划参与者成功率
+     */
+    private Integer poolPlanParticipantRate;
 
     /**
      * 奖池累积的积分上限
@@ -49,6 +51,10 @@ public class UpdateSysParameterReqDTO extends BaseDTO {
     private Boolean poolNeedMeddle;
 
     /**
+     * 奖池持续时间
+     */
+    private Integer poolPlanPeriod;
+    /**
      * 用户挑战成功率
      */
     private Integer userPlanRate;
@@ -62,6 +68,11 @@ public class UpdateSysParameterReqDTO extends BaseDTO {
      * 总用户人数限制
      */
     private Integer userNumLimit;
+
+    /**
+     * 成功及格线
+     */
+    private Integer successLine;
 
     /**
      * 邀请人数限制
@@ -113,12 +124,20 @@ public class UpdateSysParameterReqDTO extends BaseDTO {
         this.poolInitParticipateIntegration = poolInitParticipateIntegration;
     }
 
-    public Integer getPoolPlanRate() {
-        return poolPlanRate;
+    public Integer getPoolPlanParticipationRate() {
+        return poolPlanParticipationRate;
     }
 
-    public void setPoolPlanRate(Integer poolPlanRate) {
-        this.poolPlanRate = poolPlanRate;
+    public void setPoolPlanParticipationRate(Integer poolPlanParticipationRate) {
+        this.poolPlanParticipationRate = poolPlanParticipationRate;
+    }
+
+    public Integer getPoolPlanParticipantRate() {
+        return poolPlanParticipantRate;
+    }
+
+    public void setPoolPlanParticipantRate(Integer poolPlanParticipantRate) {
+        this.poolPlanParticipantRate = poolPlanParticipantRate;
     }
 
     public Integer getPoolIntegrationMax() {
@@ -145,6 +164,14 @@ public class UpdateSysParameterReqDTO extends BaseDTO {
         this.poolNeedMeddle = poolNeedMeddle;
     }
 
+    public Integer getPoolPlanPeriod() {
+        return poolPlanPeriod;
+    }
+
+    public void setPoolPlanPeriod(Integer poolPlanPeriod) {
+        this.poolPlanPeriod = poolPlanPeriod;
+    }
+
     public Integer getUserPlanRate() {
         return userPlanRate;
     }
@@ -163,6 +190,14 @@ public class UpdateSysParameterReqDTO extends BaseDTO {
 
     public Integer getUserNumLimit() {
         return userNumLimit;
+    }
+
+    public Integer getSuccessLine() {
+        return successLine;
+    }
+
+    public void setSuccessLine(Integer successLine) {
+        this.successLine = successLine;
     }
 
     public void setUserNumLimit(Integer userNumLimit) {

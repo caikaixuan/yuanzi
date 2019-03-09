@@ -24,6 +24,11 @@ public class QueryParticipantPoolChartListReqDTO extends BaseDTO {
     private Integer participateTimes;
 
     /**
+     * 成功次数
+     */
+    private Integer successTimes;
+
+    /**
      * 收益
      */
     private Integer earnings;
@@ -68,6 +73,14 @@ public class QueryParticipantPoolChartListReqDTO extends BaseDTO {
 
     public void setParticipateTimes(Integer participateTimes) {
         this.participateTimes = participateTimes;
+    }
+
+    public Integer getSuccessTimes() {
+        return successTimes;
+    }
+
+    public void setSuccessTimes(Integer successTimes) {
+        this.successTimes = successTimes;
     }
 
     public Integer getEarnings() {

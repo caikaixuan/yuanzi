@@ -4,6 +4,7 @@ import com.ygbc.brain.base.rpc.Req;
 import com.ygbc.brain.base.rpc.Resp;
 import com.ygbc.brain.business.management.api.QuestionServiceFacade;
 import com.ygbc.brain.business.management.api.dto.question.*;
+import com.ygbc.brain.business.management.api.model.ChallengeModel;
 import com.ygbc.brain.business.management.api.model.QuestionModel;
 import com.ygbc.brain.business.management.service.question.*;
 import com.ygbc.brain.common.exception.ExceptionHandler;
@@ -67,4 +68,15 @@ public class QuestionServiceFacadeImpl implements QuestionServiceFacade {
             return exceptionHandler.handleException(e);
         }
     }
+
+    @Override
+    public Resp<ChallengeModel> getChallenge(Req<GetChallengeReqDTO> req) {
+        GetChallengeService service = SpringUtils.getBean(GetChallengeService.class);
+        try {
+            return service.execute(req);
+        } catch (Exception e) {
+            return exceptionHandler.handleException(e);
+        }
+    }
+
 }

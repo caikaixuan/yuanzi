@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.pool.DeletePoolReqDTO;
 import com.ygbc.brain.business.management.api.model.PoolModel;
 import com.ygbc.brain.business.common.dal.data.PoolData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class PoolDeleteService extends BaseExecutableService<Req<DeletePoolReqDT
         if(poolData == null){
             return Resp.build(PoolModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            poolData.setIsDel(YesNo.YES.getValue());
+            poolData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(poolData);
             return Resp.build();
         }

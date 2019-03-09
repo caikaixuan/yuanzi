@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.topic.DeleteTopicReqDTO;
 import com.ygbc.brain.business.management.api.model.TopicModel;
 import com.ygbc.brain.business.common.dal.data.TopicData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class TopicDeleteService extends BaseExecutableService<Req<DeleteTopicReq
         if(topicData == null){
             return Resp.build(TopicModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            topicData.setIsDel(YesNo.YES.getValue());
+            topicData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(topicData);
             return Resp.build();
         }

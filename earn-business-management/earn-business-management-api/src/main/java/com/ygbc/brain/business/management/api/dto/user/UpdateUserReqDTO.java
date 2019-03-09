@@ -151,9 +151,14 @@ public class UpdateUserReqDTO extends BaseDTO {
     private Integer rank;
 
     /**
-     * 状态 F:冻结;A:活跃;C:不活跃
+     * 挑战次数
      */
-    private String status;
+    private Integer challengeNum;
+
+    /**
+     * 挑战成功次数
+     */
+    private Integer successNum;
 
     public String getPassword() {
         return password;
@@ -379,19 +384,27 @@ public class UpdateUserReqDTO extends BaseDTO {
         this.lastLoginTime = lastLoginTime;
     }
 
-    public String getStatus() {
-        return status;
-    }
-
-    public void setStatus(String status) {
-        this.status = status == null ? null : status.trim();
-    }
-
     public Integer getRank() {
         return rank;
     }
 
     public void setRank(Integer rank) {
         this.rank = rank;
+    }
+
+    public Integer getChallengeNum() {
+        return challengeNum;
+    }
+
+    public void setChallengeNum(Integer challengeNum) {
+        this.challengeNum = challengeNum;
+    }
+
+    public Integer getSuccessNum() {
+        return successNum;
+    }
+
+    public void setSuccessNum(Integer successNum) {
+        this.successNum = successNum;
     }
 }

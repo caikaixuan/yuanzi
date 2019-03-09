@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.sys_parameter.DeleteSysParameterReqDTO;
 import com.ygbc.brain.business.management.api.model.SysParameterModel;
 import com.ygbc.brain.business.common.dal.data.SysParameterData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class SysParameterDeleteService extends BaseExecutableService<Req<DeleteS
         if(sysParameterData == null){
             return Resp.build(SysParameterModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            sysParameterData.setIsDel(YesNo.YES.getValue());
+            sysParameterData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(sysParameterData);
             return Resp.build();
         }

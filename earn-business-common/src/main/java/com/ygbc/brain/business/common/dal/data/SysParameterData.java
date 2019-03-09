@@ -22,9 +22,14 @@ public class SysParameterData extends BaseData {
     private Integer poolInitParticipateIntegration;
 
     /**
-     * 奖池计划挑战成功率
+     * 奖池计划参与成功率
      */
-    private Integer poolPlanRate;
+    private Integer poolPlanParticipationRate;
+
+    /**
+     * 奖池计划参与者成功率
+     */
+    private Integer poolPlanParticipantRate;
 
     /**
      * 奖池累积的积分上限
@@ -42,6 +47,10 @@ public class SysParameterData extends BaseData {
     private Boolean poolNeedMeddle;
 
     /**
+     * 奖池持续时间
+     */
+    private Integer poolPlanPeriod;
+    /**
      * 用户挑战成功率
      */
     private Integer userPlanRate;
@@ -55,6 +64,11 @@ public class SysParameterData extends BaseData {
      * 总用户人数限制
      */
     private Integer userNumLimit;
+
+    /**
+     * 成功及格线
+     */
+    private Integer successLine;
 
     /**
      * 邀请人数限制
@@ -98,12 +112,20 @@ public class SysParameterData extends BaseData {
         this.poolInitParticipateIntegration = poolInitParticipateIntegration;
     }
 
-    public Integer getPoolPlanRate() {
-        return poolPlanRate;
+    public Integer getPoolPlanParticipationRate() {
+        return poolPlanParticipationRate;
     }
 
-    public void setPoolPlanRate(Integer poolPlanRate) {
-        this.poolPlanRate = poolPlanRate;
+    public void setPoolPlanParticipationRate(Integer poolPlanParticipationRate) {
+        this.poolPlanParticipationRate = poolPlanParticipationRate;
+    }
+
+    public Integer getPoolPlanParticipantRate() {
+        return poolPlanParticipantRate;
+    }
+
+    public void setPoolPlanParticipantRate(Integer poolPlanParticipantRate) {
+        this.poolPlanParticipantRate = poolPlanParticipantRate;
     }
 
     public Integer getPoolIntegrationMax() {
@@ -130,6 +152,14 @@ public class SysParameterData extends BaseData {
         this.poolNeedMeddle = poolNeedMeddle;
     }
 
+    public Integer getPoolPlanPeriod() {
+        return poolPlanPeriod;
+    }
+
+    public void setPoolPlanPeriod(Integer poolPlanPeriod) {
+        this.poolPlanPeriod = poolPlanPeriod;
+    }
+
     public Integer getUserPlanRate() {
         return userPlanRate;
     }
@@ -148,6 +178,14 @@ public class SysParameterData extends BaseData {
 
     public Integer getUserNumLimit() {
         return userNumLimit;
+    }
+
+    public Integer getSuccessLine() {
+        return successLine;
+    }
+
+    public void setSuccessLine(Integer successLine) {
+        this.successLine = successLine;
     }
 
     public void setUserNumLimit(Integer userNumLimit) {

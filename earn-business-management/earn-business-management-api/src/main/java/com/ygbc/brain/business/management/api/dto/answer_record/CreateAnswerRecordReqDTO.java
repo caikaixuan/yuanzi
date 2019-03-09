@@ -24,7 +24,12 @@ public class CreateAnswerRecordReqDTO extends BaseDTO {
     private Long questionId;
 
     /**
-     * 参与次数
+     * 挑战者答案
+     */
+    private String answer;
+
+    /**
+     * 回答结果
      */
     private Boolean result;
 
@@ -58,6 +63,14 @@ public class CreateAnswerRecordReqDTO extends BaseDTO {
 
     public void setQuestionId(Long questionId) {
         this.questionId = questionId;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public Boolean getResult() {

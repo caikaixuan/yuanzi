@@ -29,6 +29,11 @@ public class UpdateAnswerRecordReqDTO extends BaseDTO {
     private Long questionId;
 
     /**
+     * 挑战者答案
+     */
+    private String answer;
+
+    /**
      * 参与次数
      */
     private Boolean result;
@@ -71,6 +76,14 @@ public class UpdateAnswerRecordReqDTO extends BaseDTO {
 
     public void setQuestionId(Long questionId) {
         this.questionId = questionId;
+    }
+
+    public String getAnswer() {
+        return answer;
+    }
+
+    public void setAnswer(String answer) {
+        this.answer = answer;
     }
 
     public Boolean getResult() {

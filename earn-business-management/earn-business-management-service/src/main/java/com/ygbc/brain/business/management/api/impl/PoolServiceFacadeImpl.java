@@ -2,6 +2,7 @@ package com.ygbc.brain.business.management.api.impl;
 
 import com.ygbc.brain.base.rpc.Req;
 import com.ygbc.brain.base.rpc.Resp;
+import com.ygbc.brain.business.common.dal.data.PoolData;
 import com.ygbc.brain.business.management.api.PoolServiceFacade;
 import com.ygbc.brain.business.management.api.dto.pool.*;
 import com.ygbc.brain.business.management.api.model.PoolModel;
@@ -38,7 +39,7 @@ public class PoolServiceFacadeImpl implements PoolServiceFacade {
     }
 
     @Override
-    public Resp create(Req<CreatePoolReqDTO> req) {
+    public Resp<PoolModel> create(Req<CreatePoolReqDTO> req) {
         PoolCreateService service = SpringUtils.getBean(PoolCreateService.class);
         try {
             return service.execute(req);
@@ -65,5 +66,30 @@ public class PoolServiceFacadeImpl implements PoolServiceFacade {
         } catch (Exception e) {
             return exceptionHandler.handleException(e);
         }
+    }
+
+    @Override
+    public Resp<PoolModel> getCurrentPool(Req<GetCurrentPoolReqDTO> req) {
+        GetCurrentPoolService service = SpringUtils.getBean(GetCurrentPoolService.class);
+        try {
+            return service.execute(req);
+        } catch (Exception e) {
+            return exceptionHandler.handleException(e);
+        }
+    }
+
+    @Override
+    public Resp<List<PoolModel>> getCurrentPools(Req<GetCurrentPoolsReqDTO> req) {
+        GetCurrentPoolsService service = SpringUtils.getBean(GetCurrentPoolsService.class);
+        try {
+            return service.execute(req);
+        } catch (Exception e) {
+            return exceptionHandler.handleException(e);
+        }
+    }
+
+    @Override
+    public Resp runLotteryInAdvance(Req<RunLotteryInAdvanceReqDTO> req) {
+        return null;
     }
 }

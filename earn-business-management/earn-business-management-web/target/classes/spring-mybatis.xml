@@ -85,7 +85,7 @@
     <!-- mybatis映射XML文件，注入所有的mapper接口 -->
     <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage"
-                  value="com.ygbc.brain.business.common.dal.dao, com.ygbc.brain.business.management.dal.dao"/>
+                  value="com.ygbc.brain.business.common.dal.dao"/>
         <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"/>
     </bean>
 

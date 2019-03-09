@@ -8,6 +8,7 @@ import com.ygbc.brain.business.common.service.base.BaseExecutableService;
 import com.ygbc.brain.business.management.api.dto.invite_number.DeleteInviteNumberReqDTO;
 import com.ygbc.brain.business.management.api.model.InviteNumberModel;
 import com.ygbc.brain.business.common.dal.data.InviteNumberData;
+import com.ygbc.brain.common.enums.TrueFalse;
 import com.ygbc.brain.common.enums.YesNo;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -25,7 +26,7 @@ public class InviteNumberDeleteService extends BaseExecutableService<Req<DeleteI
         if(inviteNumberData == null){
             return Resp.build(InviteNumberModel.class, Constants.PARAM_RESULTBLANK_CODE,Constants.PARAM_RESULTBLANK_DESC);
         }else{
-            inviteNumberData.setIsDel(YesNo.YES.getValue());
+            inviteNumberData.setIsDel(TrueFalse.TRUE.getValue());
             Platform.sdbUpdate(inviteNumberData);
             return Resp.build();
         }
