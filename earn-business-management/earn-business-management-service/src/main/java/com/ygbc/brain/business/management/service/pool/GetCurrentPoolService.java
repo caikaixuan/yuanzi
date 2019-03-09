@@ -19,7 +19,13 @@ public class GetCurrentPoolService extends BaseExecutableService<Req<GetCurrentP
 
     @Override
     public Resp<PoolModel> execute(Req<GetCurrentPoolReqDTO> req) throws Exception {
-        PoolData poolData = processor.getPool(req.getData().getPoolId()).getData();
+        Long poolId = req.getData().getPoolId();
+        PoolData poolData = null;
+        if(poolId != null){
+            poolData = processor.getPool(poolId).getData();
+        }else{
+            poolData = processor.getPool().getData();
+        }
         if (poolData == null) {
             return Resp.build(PoolModel.class, Constants.PARAM_RESULTBLANK_CODE, Constants.PARAM_RESULTBLANK_DESC);
         } else {

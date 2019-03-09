@@ -10,11 +10,14 @@ import org.apache.http.HttpStatus;
 import org.apache.http.StatusLine;
 import org.apache.http.client.HttpClient;
 import org.apache.http.client.methods.HttpPost;
+import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.HttpClientBuilder;
 import org.apache.http.protocol.HTTP;
 import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
+import java.net.URI;
+import java.nio.charset.Charset;
 
 public abstract class BaseRequest<T, M> {
 
@@ -32,10 +35,17 @@ public abstract class BaseRequest<T, M> {
         httpPost.setHeader("Accept", "application/json");
     }
 
-    public BaseRequest() {
+    public BaseRequest(T t) {
+        this.req.setData(t);
     }
 
-    public Resp<M> exec(HttpPost httpPost) {
+    public void init_HttpPost(String postURL){
+        httpPost.setURI(URI.create(BASE_REQUEST_URL + postURL));
+        StringEntity stringEntity = new StringEntity(JSONObject.toJSONString(req), Charset.forName("UTF-8"));
+        httpPost.setEntity(stringEntity);
+    }
+
+    public Resp<M> exec() {
         try {
             HttpResponse httpResponse = httpClient.execute(httpPost);
             StatusLine status = httpResponse.getStatusLine();
@@ -59,11 +69,19 @@ public abstract class BaseRequest<T, M> {
         return null;
     }
 
+    public M execForModel(){
+        Resp<M> resp = this.exec();
+        if(resp != null){
+            return resp.getData();
+        }
+        return null;
+    }
+
     public HttpClient getHttpClient() {
         return httpClient;
     }
 
     public abstract Class getRespDataClass();
 
-    public abstract void init_HttpPost(Req<T> req);
+
 }

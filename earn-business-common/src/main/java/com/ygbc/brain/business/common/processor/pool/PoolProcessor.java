@@ -110,6 +110,14 @@ public class PoolProcessor implements Observable<Pool, PoolProcessorEvent> {
         logger.debug("current pool's size :" + currentPools.size());
     }
 
+    public Pool getPool() {
+        Iterator<Long> iterator = currentPools.keySet().iterator();
+        if(iterator.hasNext()){
+            return currentPools.get(iterator.next());
+        }
+        return null;
+    }
+
 
     public Pool getPool(Long poolId) {
         if (currentPools.containsKey(poolId)) {
